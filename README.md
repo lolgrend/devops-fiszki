@@ -1,5 +1,7 @@
 # DevOps Flashcards
 
+**Live demo:** <https://lolgrend.github.io/devops-fiszki/>
+
 This repository is a cleaned public showcase extracted from my private AI-assisted DevOps learning workflow. The private workflow generates candidate flashcards from structured notes; this public repo contains the deployable app, validation tooling and representative content.
 
 ## What It Is
@@ -111,4 +113,16 @@ Without either credential path, the optional review exits cleanly.
 
 ## AI-Assisted Workflow
 
-This public repo contains the polished output and validation tooling. In the private workflow, structured learning notes are transformed into candidate cards, reviewed, and merged only after validation. That flow is review-first by design: generated content is treated as a candidate change, not as an automatic production update.
+Cards are LLM-generated in a private repo; this public repo is the deployable app and the review pipeline that gates anything entering `main`. Generated content is treated as an untrusted change, never auto-merged. The interesting part is the guardrails between the model and `main`:
+
+- **Two-stage review** ([`card-review.yml`](.github/workflows/card-review.yml)). Deterministic Python check first ([`review_new_cards.py`](tools/review_new_cards.py)) — frontmatter shape, slugs, duplicate ids and duplicate questions vs. base ref, length floors. LLM judge second ([`review_new_cards_llm.py`](tools/review_new_cards_llm.py)) — only after the cheap checks pass. The LLM is never the sole gate.
+- **Treat model I/O as untrusted.** System prompt explicitly frames card fields as data, not instructions (prompt-injection defense). Response uses `response_format: json_object` with a fixed schema; unknown verdicts collapse to `warn`, not `pass`; payload sets `"store": false`.
+- **Leak detector for raw LLM artifacts.** Deterministic stage fails on source-log markers (`### pytanie`, `as an ai`, `jako model`, etc.) that should never reach a published card.
+- **Bounded cost / blast radius.** Per-PR caps: `MAX_LLM_REVIEW_CARDS=5`, `MAX_LLM_CARD_CHARS=4500`, `MAX_LLM_COMPLETION_TOKENS=2000`, `MAX_LLM_SUGGESTED_ANSWER_CHARS=6000`.
+- **Provider portability.** OpenAI-compatible; works against OpenAI directly or a LiteLLM gateway. With no credentials, the LLM step exits cleanly and the deterministic stage still runs.
+- **Secret hygiene.** Output redaction via regex for OpenAI/GitHub/AWS key shapes ([`output_safety.py`](tools/output_safety.py)) before anything lands in a PR comment. LLM step and PR-write step gated on `head.repo == base.repo` so fork PRs never see secrets or `GITHUB_TOKEN` write scope.
+- **Idempotent PR comment.** Marker-based update ([`post_pr_comment.py`](tools/post_pr_comment.py)) — re-runs edit the existing comment instead of stacking.
+
+## License
+
+[MIT](LICENSE).
