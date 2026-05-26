@@ -17,7 +17,7 @@ DEFAULT_MODEL = "gpt-5.4-mini"
 OPENAI_BASE_URL = "https://api.openai.com/v1"
 DEFAULT_MAX_CARDS = 5
 DEFAULT_MAX_CARD_CHARS = 4500
-DEFAULT_MAX_COMPLETION_TOKENS = 900
+DEFAULT_MAX_COMPLETION_TOKENS = 2000
 DEFAULT_MAX_SUGGESTED_ANSWER_CHARS = 6000
 
 
@@ -89,7 +89,16 @@ def main() -> int:
             has_fail = True
             continue
 
-        review = review_card(base_url, api_key, args.model, card)
+        try:
+            review = review_card(base_url, api_key, args.model, card)
+        except RuntimeError as error:
+            print(f"## {index}. `{card.card_id}` — {format_verdict_label('fail')}")
+            print()
+            print(f"**Reason:** LLM review failed: {normalize_inline(error)}")
+            print()
+            has_fail = True
+            continue
+
         verdict = normalize_verdict(review.get("verdict"))
         topic = normalize_inline(review.get("topic") or card.meta.get("title") or card.card_id)
         reason = normalize_inline(review.get("reason") or "No reason returned.")
@@ -202,6 +211,7 @@ def review_card(base_url: str, api_key: str, model: str, card) -> dict[str, obje
         ],
         "response_format": {"type": "json_object"},
         "max_completion_tokens": max_completion_tokens,
+        "store": False,
     }
 
     try:
@@ -235,9 +245,15 @@ def call_chat_completions(base_url: str, api_key: str, payload: dict[str, object
         raise RuntimeError(f"Could not reach LLM endpoint: {error.reason}") from error
 
     try:
-        content = data["choices"][0]["message"]["content"]
+        choice = data["choices"][0]
+        content = choice["message"]["content"]
     except (KeyError, IndexError, TypeError) as error:
         raise RuntimeError(f"Unexpected LLM API response shape: {data!r}") from error
+
+    if not content:
+        finish_reason = choice.get("finish_reason")
+        usage = data.get("usage")
+        raise RuntimeError(f"LLM returned empty content; finish_reason={finish_reason!r}, usage={usage!r}")
 
     return parse_json_object(content)
 

@@ -35,7 +35,9 @@ jobs:
       - name: Deterministic card review
         id: deterministic_review
         continue-on-error: true
-        run: python3 tools/review_new_cards.py --base origin/main 2>&1 | tee deterministic-review.md
+        run: |
+          set -o pipefail
+          python3 tools/review_new_cards.py --base origin/main 2>&1 | tee deterministic-review.md
 
       - name: Optional LLM card review
         if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
@@ -46,12 +48,14 @@ jobs:
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
           MAX_LLM_REVIEW_CARDS: 5
           MAX_LLM_CARD_CHARS: 4500
-          MAX_LLM_COMPLETION_TOKENS: 900
+          MAX_LLM_COMPLETION_TOKENS: 2000
           MAX_LLM_SUGGESTED_ANSWER_CHARS: 6000
           LITE_LLM_BASE_URL: ${{ vars.LITE_LLM_BASE_URL }}
           LITE_LLM_MODEL: ${{ vars.LITE_LLM_MODEL }}
           LITE_LLM_KEY: ${{ secrets.LITE_LLM_KEY }}
-        run: python3 tools/review_new_cards_llm.py --base origin/main --optional 2>&1 | tee llm-review.md
+        run: |
+          set -o pipefail
+          python3 tools/review_new_cards_llm.py --base origin/main --optional 2>&1 | tee llm-review.md
 
       - name: Record skipped LLM review for fork PR
         if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
