@@ -1,0 +1,17 @@
+{
+  "name": "devops-flashcards",
+  "version": "1.0.0",
+  "description": "A static DevOps flashcard showcase with validation and AI-assisted review tooling.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node tools/generate-manifest.mjs",
+    "mark-new": "node tools/mark-new-cards.mjs",
+    "build": "node tools/build-static.mjs",
+    "review:auto": "python3 tools/review_new_cards.py --base origin/main",
+    "review:auto:llm": "python3 tools/review_new_cards_llm.py --base origin/main --strict-warnings",
+    "review:auto:llm:optional": "python3 tools/review_new_cards_llm.py --base origin/main --optional",
+    "check": "node --check tools/generate-manifest.mjs && npm run generate",
+    "serve": "python3 -m http.server 4173"
+  }
+}
