@@ -10,6 +10,7 @@ import sys
 import urllib.error
 import urllib.request
 
+from output_safety import redact_sensitive_text
 from review_new_cards import Finding, changed_card_paths, ensure_base_ref, git_stdout, load_current_cards
 
 
@@ -283,11 +284,11 @@ def normalize_verdict(value: object) -> str:
 
 
 def normalize_inline(value: object) -> str:
-    return " ".join(str(value or "").split())
+    return redact_sensitive_text(" ".join(str(value or "").split()))
 
 
 def normalize_block(value: object) -> str:
-    return str(value or "").strip()
+    return redact_sensitive_text(str(value or "").strip())
 
 
 def print_remediation(card, review: dict[str, object], branch_name: str) -> None:
@@ -371,6 +372,7 @@ def current_branch_name() -> str:
 
 
 def print_fenced(language: str, content: str) -> None:
+    content = redact_sensitive_text(content)
     longest = 2
     current = 0
     for char in content:

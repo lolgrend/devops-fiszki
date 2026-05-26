@@ -63,22 +63,7 @@ jobs:
 
       - name: Build PR review comment
         if: always()
-        run: |
-          {
-            echo "## Card review"
-            echo
-            echo "### Deterministic review"
-            echo
-            echo '```text'
-            cat deterministic-review.md 2>/dev/null || echo "Deterministic review did not produce output."
-            echo '```'
-            echo
-            echo "### Optional LLM review"
-            echo
-            echo '```text'
-            cat llm-review.md 2>/dev/null || echo "LLM review did not produce output."
-            echo '```'
-          } > card-review-comment.md
+        run: python3 tools/build_review_comment.py
 
       - name: Comment review on PR
         if: always() && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
