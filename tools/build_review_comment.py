@@ -20,17 +20,17 @@ def main() -> int:
 
     body = "\n".join(
         [
-            "## Card review",
+            "# Card review",
             "",
-            "### Deterministic review",
+            "## Deterministic review",
             "",
             "```text",
             deterministic.rstrip(),
             "```",
             "",
-            "### Optional LLM review",
+            "## Optional LLM review",
             "",
-            demote_headings(llm_review.rstrip()),
+            format_llm_review(llm_review.rstrip()),
             "",
         ]
     )
@@ -47,14 +47,18 @@ def read_text(path: str, fallback: str) -> str:
     return redact_sensitive_text(text or fallback)
 
 
-def demote_headings(markdown: str) -> str:
+def format_llm_review(markdown: str) -> str:
     lines = []
     for line in markdown.splitlines():
-        if line.startswith("#"):
+        if line.strip().lower() == "# llm flashcard review":
+            continue
+        if line.startswith("## "):
             lines.append(f"#{line}")
+        elif line.startswith("# "):
+            lines.append(f"##{line[1:]}")
         else:
             lines.append(line)
-    return "\n".join(lines)
+    return "\n".join(lines).lstrip()
 
 
 if __name__ == "__main__":
