@@ -1,7 +1,7 @@
 ---
-id: terraform.github-actions-dind-matched-paths
+id: ci-cd.github-actions-dind-matched-paths
 title: GitHub Actions DinD path mismatch
-technologies: [terraform, github-actions, docker, dind]
+technologies: [github-actions, docker, dind]
 areas: [ci, containers, runner-storage]
 tags: [github-actions, dind, bind-mounts, self-hosted-runner, container-jobs]
 difficulty: senior

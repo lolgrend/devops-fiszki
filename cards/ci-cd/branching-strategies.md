@@ -1,7 +1,7 @@
 ---
-id: terraform.branching-strategies
+id: ci-cd.branching-strategies
 title: Branching strategy selection
-technologies: [terraform, git, github, gitlab]
+technologies: [git, github, gitlab]
 areas: [version-control, release-management, deployment]
 tags: [git-flow, github-flow, gitlab-flow, trunk-based, branching]
 difficulty: mid

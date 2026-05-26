@@ -265,6 +265,8 @@ def review_duplicate_question(card: Card, base_questions: dict[str, Card], findi
 
     existing = base_questions.get(normalized)
     if existing and existing.card_id != card.card_id:
+        if not (ROOT / existing.path).exists():
+            return
         findings.append(
             Finding(
                 "fail",

@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write
 
 jobs:
   review:
@@ -32,11 +33,47 @@ jobs:
         run: git fetch origin main:refs/remotes/origin/main
 
       - name: Deterministic card review
-        run: python3 tools/review_new_cards.py --base origin/main
+        id: deterministic_review
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          python3 tools/review_new_cards.py --base origin/main 2>&1 | tee deterministic-review.md
 
       - name: Optional LLM card review
+        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+        id: llm_review
+        continue-on-error: true
         env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          MAX_LLM_REVIEW_CARDS: 5
+          MAX_LLM_CARD_CHARS: 4500
+          MAX_LLM_COMPLETION_TOKENS: 2000
+          MAX_LLM_SUGGESTED_ANSWER_CHARS: 6000
           LITE_LLM_BASE_URL: ${{ vars.LITE_LLM_BASE_URL }}
           LITE_LLM_MODEL: ${{ vars.LITE_LLM_MODEL }}
           LITE_LLM_KEY: ${{ secrets.LITE_LLM_KEY }}
-        run: python3 tools/review_new_cards_llm.py --base origin/main --optional
+        run: |
+          set -o pipefail
+          python3 tools/review_new_cards_llm.py --base origin/main --optional 2>&1 | tee llm-review.md
+
+      - name: Record skipped LLM review for fork PR
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
+        run: echo "LLM card review skipped for fork pull request." > llm-review.md
+
+      - name: Build PR review comment
+        if: always()
+        run: python3 tools/build_review_comment.py
+
+      - name: Comment review on PR
+        if: always() && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_API_URL: ${{ github.api_url }}
+        run: python3 tools/post_pr_comment.py --body-file card-review-comment.md --marker '<!-- card-review -->'
+
+      - name: Fail on review errors
+        if: steps.deterministic_review.outcome == 'failure' || steps.llm_review.outcome == 'failure'
+        run: exit 1
