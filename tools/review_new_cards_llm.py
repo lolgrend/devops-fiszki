@@ -14,21 +14,25 @@ from review_new_cards import Finding, changed_card_paths, ensure_base_ref, git_s
 
 
 DEFAULT_MODEL = "gpt-5.4-mini"
+OPENAI_BASE_URL = "https://api.openai.com/v1"
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Review changed flashcards with an OpenAI-compatible LLM.")
     parser.add_argument("--base", default="origin/main", help="Base ref to compare against.")
-    parser.add_argument("--model", default=os.environ.get("LITE_LLM_MODEL", DEFAULT_MODEL))
-    parser.add_argument("--optional", action="store_true", help="Skip cleanly when LiteLLM env vars are missing.")
+    parser.add_argument("--model", default=default_model())
+    parser.add_argument("--optional", action="store_true", help="Skip cleanly when LLM credentials are missing.")
     parser.add_argument("--strict-warnings", action="store_true", help="Treat LLM warnings as failures.")
     args = parser.parse_args()
 
-    base_url = os.environ.get("LITE_LLM_BASE_URL", "").rstrip("/")
-    api_key = os.environ.get("LITE_LLM_KEY", "")
+    base_url = default_base_url()
+    api_key = default_api_key()
 
-    if not base_url or not api_key:
-        message = "LLM card review skipped: LITE_LLM_BASE_URL and/or LITE_LLM_KEY are not configured."
+    if not api_key:
+        message = (
+            "LLM card review skipped: configure OPENAI_API_KEY, or configure "
+            "LITE_LLM_BASE_URL and LITE_LLM_KEY for an OpenAI-compatible gateway."
+        )
         if args.optional:
             print(message)
             return 0
@@ -112,6 +116,19 @@ def format_verdict_label(verdict: str) -> str:
     return VERDICT_LABELS.get(verdict, "**WARN**")
 
 
+def default_model() -> str:
+    return os.environ.get("LITE_LLM_MODEL") or os.environ.get("OPENAI_MODEL") or DEFAULT_MODEL
+
+
+def default_base_url() -> str:
+    base_url = os.environ.get("LITE_LLM_BASE_URL") or os.environ.get("OPENAI_BASE_URL") or OPENAI_BASE_URL
+    return base_url.rstrip("/")
+
+
+def default_api_key() -> str:
+    return os.environ.get("LITE_LLM_KEY") or os.environ.get("OPENAI_API_KEY", "")
+
+
 def review_card(base_url: str, api_key: str, model: str, card) -> dict[str, object]:
     payload = {
         "model": model,
@@ -180,14 +197,14 @@ def call_chat_completions(base_url: str, api_key: str, payload: dict[str, object
             data = json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as error:
         detail = error.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"LiteLLM HTTP {error.code}: {detail}") from error
+        raise RuntimeError(f"LLM API HTTP {error.code}: {detail}") from error
     except urllib.error.URLError as error:
-        raise RuntimeError(f"Could not reach LiteLLM endpoint: {error.reason}") from error
+        raise RuntimeError(f"Could not reach LLM endpoint: {error.reason}") from error
 
     try:
         content = data["choices"][0]["message"]["content"]
     except (KeyError, IndexError, TypeError) as error:
-        raise RuntimeError(f"Unexpected LiteLLM response shape: {data!r}") from error
+        raise RuntimeError(f"Unexpected LLM API response shape: {data!r}") from error
 
     return parse_json_object(content)
 

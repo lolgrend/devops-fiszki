@@ -41,6 +41,8 @@ jobs:
         id: llm_review
         continue-on-error: true
         env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
           LITE_LLM_BASE_URL: ${{ vars.LITE_LLM_BASE_URL }}
           LITE_LLM_MODEL: ${{ vars.LITE_LLM_MODEL }}
           LITE_LLM_KEY: ${{ secrets.LITE_LLM_KEY }}

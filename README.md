@@ -93,13 +93,18 @@ GitHub Actions runs on GitHub-hosted runners and checks that the public showcase
 - optionally run deterministic and LLM-assisted card review workflows when configured,
 - deploy the static app to GitHub Pages after changes are merged to `main`.
 
-The LLM review script uses OpenAI-compatible environment variables when available:
+The LLM review script can use the OpenAI API directly:
+
+- `OPENAI_API_KEY`
+- `OPENAI_MODEL`, optional; defaults to `gpt-5.4-mini`
+
+It also supports an OpenAI-compatible gateway such as LiteLLM:
 
 - `LITE_LLM_BASE_URL`
 - `LITE_LLM_MODEL`
 - `LITE_LLM_KEY`
 
-Without those variables, the optional review exits cleanly.
+Without either credential path, the optional review exits cleanly.
 
 ## AI-Assisted Workflow
 
