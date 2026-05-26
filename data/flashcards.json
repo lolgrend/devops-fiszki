@@ -1,5 +1,5 @@
 {
-  "cardCount": 48,
+  "cardCount": 37,
   "technologies": [
     {
       "id": "alb",
@@ -8,10 +8,6 @@
     {
       "id": "aws",
       "label": "AWS"
-    },
-    {
-      "id": "cloudtrail",
-      "label": "Cloudtrail"
     },
     {
       "id": "codedeploy",
@@ -28,10 +24,6 @@
     {
       "id": "docker",
       "label": "Docker"
-    },
-    {
-      "id": "dynamodb",
-      "label": "Dynamodb"
     },
     {
       "id": "ecr",
@@ -70,16 +62,8 @@
       "label": "Gitlab CI"
     },
     {
-      "id": "hpa",
-      "label": "HPA"
-    },
-    {
       "id": "kube-proxy",
       "label": "Kube Proxy"
-    },
-    {
-      "id": "kubectl",
-      "label": "Kubectl"
     },
     {
       "id": "kubernetes",
@@ -132,14 +116,6 @@
       "label": "Deployment"
     },
     {
-      "id": "deployments",
-      "label": "Deployments"
-    },
-    {
-      "id": "drift",
-      "label": "Drift"
-    },
-    {
       "id": "eks",
       "label": "EKS"
     },
@@ -148,20 +124,8 @@
       "label": "Health Checks"
     },
     {
-      "id": "identity",
-      "label": "Identity"
-    },
-    {
       "id": "lifecycle",
       "label": "Lifecycle"
-    },
-    {
-      "id": "locking",
-      "label": "Locking"
-    },
-    {
-      "id": "metrics",
-      "label": "Metrics"
     },
     {
       "id": "modules",
@@ -172,28 +136,12 @@
       "label": "Networking"
     },
     {
-      "id": "observability",
-      "label": "Observability"
-    },
-    {
       "id": "opentofu",
       "label": "Opentofu"
     },
     {
-      "id": "pipeline",
-      "label": "Pipeline"
-    },
-    {
-      "id": "plan",
-      "label": "Plan"
-    },
-    {
       "id": "planning",
       "label": "Planning"
-    },
-    {
-      "id": "providers",
-      "label": "Providers"
     },
     {
       "id": "readiness",
@@ -208,14 +156,6 @@
       "label": "Rollback"
     },
     {
-      "id": "rollbacks",
-      "label": "Rollbacks"
-    },
-    {
-      "id": "rollout",
-      "label": "Rollout"
-    },
-    {
       "id": "runner-storage",
       "label": "Runner Storage"
     },
@@ -226,14 +166,6 @@
     {
       "id": "secrets",
       "label": "Secrets"
-    },
-    {
-      "id": "security-group",
-      "label": "Security Group"
-    },
-    {
-      "id": "service-discovery",
-      "label": "Service Discovery"
     },
     {
       "id": "services",
@@ -326,10 +258,6 @@
       "label": "Coupling"
     },
     {
-      "id": "cpu",
-      "label": "Cpu"
-    },
-    {
       "id": "crashloopbackoff",
       "label": "Crashloopbackoff"
     },
@@ -360,10 +288,6 @@
     {
       "id": "destroy",
       "label": "Destroy"
-    },
-    {
-      "id": "diagnostics",
-      "label": "Diagnostics"
     },
     {
       "id": "dind",
@@ -404,10 +328,6 @@
     {
       "id": "environments",
       "label": "Environments"
-    },
-    {
-      "id": "events",
-      "label": "Events"
     },
     {
       "id": "eventual-consistency",
@@ -482,20 +402,12 @@
       "label": "Idempotency"
     },
     {
-      "id": "image-digest",
-      "label": "Image Digest"
-    },
-    {
       "id": "import",
       "label": "Import"
     },
     {
       "id": "incident-response",
       "label": "Incident Response"
-    },
-    {
-      "id": "ingress",
-      "label": "Ingress"
     },
     {
       "id": "latency",
@@ -508,10 +420,6 @@
     {
       "id": "lifecycle",
       "label": "Lifecycle"
-    },
-    {
-      "id": "livenessprobe",
-      "label": "Livenessprobe"
     },
     {
       "id": "logs",
@@ -548,10 +456,6 @@
     {
       "id": "oidc",
       "label": "OIDC"
-    },
-    {
-      "id": "oomkilled",
-      "label": "Oomkilled"
     },
     {
       "id": "opentofu",
@@ -598,20 +502,12 @@
       "label": "Quotas"
     },
     {
-      "id": "rds",
-      "label": "Rds"
-    },
-    {
       "id": "readability",
       "label": "Readability"
     },
     {
       "id": "readiness",
       "label": "Readiness"
-    },
-    {
-      "id": "readinessprobe",
-      "label": "Readinessprobe"
     },
     {
       "id": "refactoring",
@@ -630,20 +526,12 @@
       "label": "Renovate"
     },
     {
-      "id": "replace",
-      "label": "Replace"
-    },
-    {
       "id": "replacement",
       "label": "Replacement"
     },
     {
       "id": "requests",
       "label": "Requests"
-    },
-    {
-      "id": "resource-group",
-      "label": "Resource Group"
     },
     {
       "id": "resources",
@@ -686,14 +574,6 @@
       "label": "Service"
     },
     {
-      "id": "sg",
-      "label": "Sg"
-    },
-    {
-      "id": "startupprobe",
-      "label": "Startupprobe"
-    },
-    {
       "id": "state",
       "label": "State"
     },
@@ -710,16 +590,8 @@
       "label": "State Mv"
     },
     {
-      "id": "sts",
-      "label": "STS"
-    },
-    {
       "id": "subnet",
       "label": "Subnet"
-    },
-    {
-      "id": "task-definition",
-      "label": "Task Definition"
     },
     {
       "id": "terraform",
@@ -802,58 +674,6 @@
       "answerHtml": "<p>1. <strong>Separate infrastructure from application delivery.</strong> Use Terraform for long-lived resources only: ECS cluster/service, ALB, target groups, IAM, autoscaling, log groups, deployment controller, and secret <em>references</em>. Do <strong>not</strong> run <code>terraform apply</code> on every app release.</p>\n<p>2. <strong>Deploy the app by creating a new ECS task definition revision</strong> that points to an <strong>immutable image</strong> in ECR, ideally by digest, or at least by commit SHA tag. <code>aws ecs update-service --force-new-deployment</code> alone is not enough, because it only redeploys the currently configured task definition.</p>\n<pre><code>IMAGE=&quot;123456789012.dkr.ecr.eu-west-1.amazonaws.com/app:$CI_COMMIT_SHA&quot;\ndocker build -t &quot;$IMAGE&quot; .\ndocker push &quot;$IMAGE&quot;\n\naws ecs register-task-definition --cli-input-json file://rendered-taskdef.json\naws ecs update-service --cluster prod --service api --task-definition api:123</code></pre>\n<p>3. <strong>Rollback should be deterministic.</strong> Store the mapping <code>environment -&gt; task definition revision -&gt; image digest -&gt; Git SHA</code>. Roll back by updating the service to the previous known-good task definition revision, or use ECS deployment circuit breaker / CodeDeploy automatic rollback.</p>\n<p>4. <strong>Secrets</strong>: keep runtime secrets in <strong>AWS Secrets Manager</strong> or <strong>SSM Parameter Store</strong> and inject them through the ECS task definition <code>secrets</code> field. The <strong>ECS agent</strong> resolves those references at task startup using the <strong>task execution role</strong>, so that role needs <code>secretsmanager:GetSecretValue</code> / <code>ssm:GetParameters</code> and the relevant KMS decrypt permissions. The <strong>task role</strong> is different: it is the identity the application inside the container assumes at runtime to call AWS APIs (S3, DynamoDB, etc.). Do not collapse the two — granting app-runtime permissions on the execution role is a common antipattern. Avoid plaintext secrets in Terraform state, plan output, or GitLab variables. Prefer GitLab <strong>OIDC + AssumeRole</strong> over long-lived AWS keys.</p>\n<p>5. <strong>Health and gradual rollout</strong>: use ALB target group health checks, <code>healthCheckGracePeriodSeconds</code>, <code>minimumHealthyPercent</code>, <code>maximumPercent</code>, ECS deployment circuit breaker, and CloudWatch alarms. For traffic shifting use <strong>CodeDeploy blue/green</strong> with linear or canary modes — note that canary/linear is a CodeDeploy feature, native ECS rolling deployments don&#39;t support it. Use lightweight <code>/healthz</code> and <code>/readyz</code>; keep deeper validation in post-deploy smoke tests.</p>\n<p>6. <strong>Pipeline shape</strong>: <code>test -&gt; build -&gt; deploy_dev -&gt; deploy_staging -&gt; smoke_tests -&gt; deploy_prod(manual/approved) -&gt; rollback</code>. Promote the <strong>same built image</strong> across environments, serialize prod deploys with a lock such as GitLab <code>resource_group</code>, and keep infra and app rollout in separate pipelines or execution paths.</p>\n<p>7. <strong>Residual risks</strong>: backward-incompatible DB migrations, shallow health checks missing business failures, secret rotation issues, external dependency outages, and Terraform drift or manual console changes.</p>"
     },
     {
-      "id": "aws.ecs-fargate-safe-gitlab-deploy",
-      "title": "Safer ECS Fargate deployments",
-      "technologies": [
-        "aws",
-        "ecs",
-        "fargate",
-        "gitlab-ci",
-        "terraform",
-        "ecr"
-      ],
-      "areas": [
-        "deployments",
-        "cicd",
-        "containers",
-        "observability"
-      ],
-      "tags": [
-        "ecs",
-        "task-definition",
-        "image-digest",
-        "rollback",
-        "gitlab",
-        "terraform"
-      ],
-      "difficulty": "mid",
-      "question": "How would you design a safe GitLab CI/CD deployment pipeline for AWS ECS Fargate so production deploys use the exact intended image and configuration, support rollback, and avoid mutable tags and what force-new-deployment flag does?",
-      "source": "cards/aws/ecs-fargate-safe-gitlab-deploy.md",
-      "answerMarkdown": "1. **Immediate safety**: stop deploying with only `aws ecs update-service --force-new-deployment` for image/config changes. That command reuses the **current task definition**, so ECS may restart tasks with old image references, env vars, or secrets wiring.\n\n2. **Correct deployment flow**: build **once**, push **once**, capture the **image digest**, render a task definition with that exact digest, register a **new task definition revision**, update the service to that revision, wait for stability, then run smoke tests. Prefer digest over tags; `latest` and other mutable tags are unsafe.\n\n3. **Promotion and rollback**: promote the **same artifact** through `dev -> stage -> prod`; do not rebuild per environment. Keep env-specific config outside the image via task definition env vars, SSM Parameter Store, or Secrets Manager. Record deployed task definition revision and image digest per environment. Roll back by updating the service to the previous known-good task definition revision.\n\n```bash\naws ecs register-task-definition --cli-input-json file://task-definition.json\naws ecs update-service \\\n  --cluster prod-cluster \\\n  --service orders-api \\\n  --task-definition orders-api:<new-revision>\naws ecs wait services-stable --cluster prod-cluster --services orders-api\n\n# rollback\naws ecs update-service \\\n  --cluster prod-cluster \\\n  --service orders-api \\\n  --task-definition orders-api:<previous-good-revision>\n```\n\n4. **Checks and ownership**: verify ECS deployment settings and health checks: `minimumHealthyPercent`, `maximumPercent`, `healthCheckGracePeriodSeconds`, ALB target health, container health checks, desired/running/pending counts, and stopped task reasons. During incidents check ECS service events, app CloudWatch logs, ALB target and ELB 5xx, target health, CPU/memory, exit code 137/OOM, and dependency failures. Use Terraform for stable infrastructure (cluster, service baseline, IAM, networking, ALB, log groups, autoscaling), but usually not for every app release. In GitLab: build once, deploy to dev, smoke test, deploy to stage, smoke test, then **manual approval** for prod; protect branches/environments and serialize prod deploys.",
-      "answerHtml": "<p>1. <strong>Immediate safety</strong>: stop deploying with only <code>aws ecs update-service --force-new-deployment</code> for image/config changes. That command reuses the <strong>current task definition</strong>, so ECS may restart tasks with old image references, env vars, or secrets wiring.</p>\n<p>2. <strong>Correct deployment flow</strong>: build <strong>once</strong>, push <strong>once</strong>, capture the <strong>image digest</strong>, render a task definition with that exact digest, register a <strong>new task definition revision</strong>, update the service to that revision, wait for stability, then run smoke tests. Prefer digest over tags; <code>latest</code> and other mutable tags are unsafe.</p>\n<p>3. <strong>Promotion and rollback</strong>: promote the <strong>same artifact</strong> through <code>dev -&gt; stage -&gt; prod</code>; do not rebuild per environment. Keep env-specific config outside the image via task definition env vars, SSM Parameter Store, or Secrets Manager. Record deployed task definition revision and image digest per environment. Roll back by updating the service to the previous known-good task definition revision.</p>\n<pre><code>aws ecs register-task-definition --cli-input-json file://task-definition.json\naws ecs update-service \\\n  --cluster prod-cluster \\\n  --service orders-api \\\n  --task-definition orders-api:&lt;new-revision&gt;\naws ecs wait services-stable --cluster prod-cluster --services orders-api\n\n# rollback\naws ecs update-service \\\n  --cluster prod-cluster \\\n  --service orders-api \\\n  --task-definition orders-api:&lt;previous-good-revision&gt;</code></pre>\n<p>4. <strong>Checks and ownership</strong>: verify ECS deployment settings and health checks: <code>minimumHealthyPercent</code>, <code>maximumPercent</code>, <code>healthCheckGracePeriodSeconds</code>, ALB target health, container health checks, desired/running/pending counts, and stopped task reasons. During incidents check ECS service events, app CloudWatch logs, ALB target and ELB 5xx, target health, CPU/memory, exit code 137/OOM, and dependency failures. Use Terraform for stable infrastructure (cluster, service baseline, IAM, networking, ALB, log groups, autoscaling), but usually not for every app release. In GitLab: build once, deploy to dev, smoke test, deploy to stage, smoke test, then <strong>manual approval</strong> for prod; protect branches/environments and serialize prod deploys.</p>"
-    },
-    {
-      "id": "aws.iam-oidc-ci",
-      "title": "AWS IAM OIDC for CI",
-      "technologies": [
-        "aws"
-      ],
-      "areas": [
-        "identity"
-      ],
-      "tags": [
-        "iam",
-        "oidc",
-        "ci",
-        "sts"
-      ],
-      "difficulty": "senior",
-      "question": "How does AWS OIDC federation remove the need for static CI access keys?",
-      "source": "cards/aws/iam-oidc-ci.md",
-      "answerMarkdown": "The CI provider issues a signed OIDC token for the job. AWS IAM trusts that issuer and allows the job to call `sts:AssumeRoleWithWebIdentity`.\n\nThe IAM role trust policy should restrict:\n\n- The OIDC provider.\n- The expected audience.\n- The repository, branch, tag, or environment encoded in the token subject.\n\nThe job receives temporary AWS credentials instead of long-lived access keys.\n\nIn GitHub Actions this also requires explicit `id-token: write` permission for the job or workflow that needs to request an OIDC token.\n\nBenefits:\n\n- No static cloud secret stored in CI.\n- Short credential lifetime.\n- Better audit trail through role sessions.\n- Separate roles for dev, staging, and production.\n\nThis is a good default for Terraform pipelines, deployment jobs, and automation that runs from GitHub Actions, GitLab CI, or similar systems.",
-      "answerHtml": "<p>The CI provider issues a signed OIDC token for the job. AWS IAM trusts that issuer and allows the job to call <code>sts:AssumeRoleWithWebIdentity</code>.</p>\n<p>The IAM role trust policy should restrict:</p>\n<ul><li>The OIDC provider.</li><li>The expected audience.</li><li>The repository, branch, tag, or environment encoded in the token subject.</li></ul>\n<p>The job receives temporary AWS credentials instead of long-lived access keys.</p>\n<p>In GitHub Actions this also requires explicit <code>id-token: write</code> permission for the job or workflow that needs to request an OIDC token.</p>\n<p>Benefits:</p>\n<ul><li>No static cloud secret stored in CI.</li><li>Short credential lifetime.</li><li>Better audit trail through role sessions.</li><li>Separate roles for dev, staging, and production.</li></ul>\n<p>This is a good default for Terraform pipelines, deployment jobs, and automation that runs from GitHub Actions, GitLab CI, or similar systems.</p>"
-    },
-    {
       "id": "bridge.eks-cluster-basics",
       "title": "EKS as a Kubernetes and AWS boundary",
       "technologies": [
@@ -876,6 +696,58 @@
       "answerHtml": "<p>EKS combines Kubernetes APIs with AWS infrastructure and identity.</p>\n<p>You need Kubernetes knowledge for:</p>\n<ul><li>Workloads, services, ingress, scheduling, and autoscaling.</li><li>Cluster add-ons such as CoreDNS and the VPC CNI.</li><li>RBAC and Kubernetes service accounts.</li></ul>\n<p>You need AWS knowledge for:</p>\n<ul><li>IAM roles and policies.</li><li>VPC, subnets, route tables, and security groups.</li><li>Load balancers and target groups.</li><li>IRSA or EKS Pod Identity for pod-level AWS access.</li></ul>\n<p>The bridge is where production issues often live. A pod may be healthy from Kubernetes&#39; point of view but unable to reach AWS APIs because IAM, DNS, routing, or security groups are wrong.</p>"
     },
     {
+      "id": "ci-cd.branching-strategies",
+      "title": "Branching strategy selection",
+      "technologies": [
+        "git",
+        "github",
+        "gitlab"
+      ],
+      "areas": [
+        "version-control",
+        "release-management",
+        "deployment"
+      ],
+      "tags": [
+        "git-flow",
+        "github-flow",
+        "gitlab-flow",
+        "trunk-based",
+        "branching"
+      ],
+      "difficulty": "mid",
+      "question": "How do Git Flow, GitHub Flow, GitLab Flow, and trunk-based development differ, and when should you choose each strategy?",
+      "source": "cards/ci-cd/branching-strategies.md",
+      "answerMarkdown": "Choose based on **release model**, **branch lifetime**, and **deployment maturity**.\n\n- **Git Flow**: long-lived `main` and `develop`; `feature/*` branch from `develop`; `release/*` for stabilization; `hotfix/*` from `main`. Best for **versioned, discrete releases** such as mobile apps, desktop software, libraries, or firmware. Weak fit for CD because it increases merge complexity and integration delay.\n- **GitHub Flow**: only one long-lived branch, `main`, which must stay deployable. Work happens on short-lived branches, then PR -> CI/review -> merge -> deploy. Best for **web/SaaS with continuous deployment**. Simple and fast, but assumes strong CI and often feature flags.\n- **GitLab Flow**: GitHub Flow plus either **environment branches** (`main` -> `pre-production` -> `production`) or **release branches** (`release/X.Y`). Good when you need **auditable promotion across environments**, gated deploys, or support for older versions.\n- **Trunk-based development**: developers commit directly to `main` or use branches that live less than a day; incomplete work is hidden behind feature flags. Best for **high-velocity, mature engineering organizations** with strong CI, monitoring, and fast rollback.\n\n**Decision criteria**\n1. Need formal, versioned releases? Use **Git Flow** or **GitLab Flow with release branches**.\n2. Need simple continuous delivery to a single target? Use **GitHub Flow**.\n3. Need controlled promotion between environments or compliance evidence? Use **GitLab Flow with environment branches**.\n4. Need maximum throughput and can enforce strict engineering discipline? Use **trunk-based development**.\n\n**Rule of thumb**: for modern web/CD, prefer **GitHub Flow** or **trunk-based**. Do not treat **Git Flow** as the default; it is mainly useful when the release itself is a first-class process.",
+      "answerHtml": "<p>Choose based on <strong>release model</strong>, <strong>branch lifetime</strong>, and <strong>deployment maturity</strong>.</p>\n<ul><li><strong>Git Flow</strong>: long-lived <code>main</code> and <code>develop</code>; <code>feature/<em></code> branch from <code>develop</code>; <code>release/</em></code> for stabilization; <code>hotfix/*</code> from <code>main</code>. Best for <strong>versioned, discrete releases</strong> such as mobile apps, desktop software, libraries, or firmware. Weak fit for CD because it increases merge complexity and integration delay.</li><li><strong>GitHub Flow</strong>: only one long-lived branch, <code>main</code>, which must stay deployable. Work happens on short-lived branches, then PR -&gt; CI/review -&gt; merge -&gt; deploy. Best for <strong>web/SaaS with continuous deployment</strong>. Simple and fast, but assumes strong CI and often feature flags.</li><li><strong>GitLab Flow</strong>: GitHub Flow plus either <strong>environment branches</strong> (<code>main</code> -&gt; <code>pre-production</code> -&gt; <code>production</code>) or <strong>release branches</strong> (<code>release/X.Y</code>). Good when you need <strong>auditable promotion across environments</strong>, gated deploys, or support for older versions.</li><li><strong>Trunk-based development</strong>: developers commit directly to <code>main</code> or use branches that live less than a day; incomplete work is hidden behind feature flags. Best for <strong>high-velocity, mature engineering organizations</strong> with strong CI, monitoring, and fast rollback.</li></ul>\n<p><strong>Decision criteria</strong> 1. Need formal, versioned releases? Use <strong>Git Flow</strong> or <strong>GitLab Flow with release branches</strong>. 2. Need simple continuous delivery to a single target? Use <strong>GitHub Flow</strong>. 3. Need controlled promotion between environments or compliance evidence? Use <strong>GitLab Flow with environment branches</strong>. 4. Need maximum throughput and can enforce strict engineering discipline? Use <strong>trunk-based development</strong>.</p>\n<p><strong>Rule of thumb</strong>: for modern web/CD, prefer <strong>GitHub Flow</strong> or <strong>trunk-based</strong>. Do not treat <strong>Git Flow</strong> as the default; it is mainly useful when the release itself is a first-class process.</p>"
+    },
+    {
+      "id": "ci-cd.github-actions-dind-matched-paths",
+      "title": "GitHub Actions DinD path mismatch",
+      "technologies": [
+        "github-actions",
+        "docker",
+        "dind"
+      ],
+      "areas": [
+        "ci",
+        "containers",
+        "runner-storage"
+      ],
+      "tags": [
+        "github-actions",
+        "dind",
+        "bind-mounts",
+        "self-hosted-runner",
+        "container-jobs"
+      ],
+      "difficulty": "senior",
+      "question": "Why can a self-hosted GitHub Actions runner using Docker-in-Docker fail immediately on a `container:` job step with exit code 1, and how do you fix it without removing DinD?",
+      "source": "cards/ci-cd/github-actions-dind-matched-paths.md",
+      "answerMarkdown": "The usual cause is a **workspace path mismatch between the runner container and the DinD daemon container**. Official `actions/runner` handles `container:` jobs by creating a script under `_work/_temp`, then asking Docker to **bind-mount** `<runner_home>/_work` into the job container and execute that script from `/__w/_temp/...`.\n\nIf the Docker daemon is DinD, the bind mount is resolved from the **daemon container filesystem**, not the runner container. When the same path does not exist inside DinD, Docker mounts an empty directory, so `bash /__w/_temp/<uuid>.sh` is missing and exits almost instantly.\n\n1. **Immediate check**: inspect `_diag/Worker_*.log` for `docker create ... -v <runner_home>/_work:/__w` followed by `docker exec ... bash /__w/_temp/<uuid>.sh` and a fast failure.\n2. **Confirm** from the DinD container that `<runner_home>/_work/_temp` is missing or empty.\n3. **Fix**: make `_work` visible under the **same absolute path** in both runner and DinD.\n\n```yaml\nservices:\n  github-dind:\n    volumes:\n      - ./data:/runners\n\n  runner:\n    environment:\n      RUNNER_HOME: /runners/fiszki\n    volumes:\n      - ./data/fiszki:/runners/fiszki\n```\n\nAlso make the runner use `RUNNER_HOME` consistently in entrypoint/init logic.\n\nThis differs from Gitea `act_runner`, which uses named volumes and `docker cp`, so it does not require matched host paths. **Prevention**: standardize runner home paths, document DinD path requirements, and validate `_work` visibility from the daemon during provisioning.",
+      "answerHtml": "<p>The usual cause is a <strong>workspace path mismatch between the runner container and the DinD daemon container</strong>. Official <code>actions/runner</code> handles <code>container:</code> jobs by creating a script under <code>_work/_temp</code>, then asking Docker to <strong>bind-mount</strong> <code>&lt;runner_home&gt;/_work</code> into the job container and execute that script from <code>/__w/_temp/...</code>.</p>\n<p>If the Docker daemon is DinD, the bind mount is resolved from the <strong>daemon container filesystem</strong>, not the runner container. When the same path does not exist inside DinD, Docker mounts an empty directory, so <code>bash /__w/_temp/&lt;uuid&gt;.sh</code> is missing and exits almost instantly.</p>\n<p>1. <strong>Immediate check</strong>: inspect <code>_diag/Worker_*.log</code> for <code>docker create ... -v &lt;runner_home&gt;/_work:/__w</code> followed by <code>docker exec ... bash /__w/_temp/&lt;uuid&gt;.sh</code> and a fast failure. 2. <strong>Confirm</strong> from the DinD container that <code>&lt;runner_home&gt;/_work/_temp</code> is missing or empty. 3. <strong>Fix</strong>: make <code>_work</code> visible under the <strong>same absolute path</strong> in both runner and DinD.</p>\n<pre><code>services:\n  github-dind:\n    volumes:\n      - ./data:/runners\n\n  runner:\n    environment:\n      RUNNER_HOME: /runners/fiszki\n    volumes:\n      - ./data/fiszki:/runners/fiszki</code></pre>\n<p>Also make the runner use <code>RUNNER_HOME</code> consistently in entrypoint/init logic.</p>\n<p>This differs from Gitea <code>act_runner</code>, which uses named volumes and <code>docker cp</code>, so it does not require matched host paths. <strong>Prevention</strong>: standardize runner home paths, document DinD path requirements, and validate <code>_work</code> visibility from the daemon during provisioning.</p>"
+    },
+    {
       "id": "kubernetes.crashloop-after-deployment",
       "title": "CrashLoopBackOff after deployment",
       "technologies": [
@@ -896,30 +768,6 @@
       "source": "cards/kubernetes/crashloop-after-deployment.md",
       "answerMarkdown": "First preserve evidence and find the termination reason. `CrashLoopBackOff` means Kubernetes keeps restarting a container that exits or fails probes.\n\nUseful commands:\n\n```bash\nkubectl get deploy,rs,pods\nkubectl get pods -o wide\nkubectl logs <pod> --previous\nkubectl logs <pod>\nkubectl describe pod <pod>\nkubectl describe deploy api-service\nkubectl get pod <pod> -o yaml\nkubectl top pod\n```\n\nCheck:\n\n- Application logs and exit code.\n- `OOMKilled` or CPU throttling.\n- Probe failures.\n- Missing or changed ConfigMaps and Secrets.\n- Wrong image tag, command, args, or environment variables.\n- Broken dependency such as database, DNS, or external API.\n- Whether failures are isolated to one node.\n\nRollback when production impact continues, the issue correlates with the deployment, and there is no quick low-risk fix. Prefer the normal CI/CD rollback path if it is fast. For immediate mitigation:\n\n```bash\nkubectl rollout undo deployment/api-service\nkubectl rollout status deployment/api-service\n```\n\nImprove the deployment process with realistic readiness checks, startup probes for slow boot, pre-prod smoke tests, canaries or progressive delivery, and pipeline gates that fail when the rollout becomes unhealthy.",
       "answerHtml": "<p>First preserve evidence and find the termination reason. <code>CrashLoopBackOff</code> means Kubernetes keeps restarting a container that exits or fails probes.</p>\n<p>Useful commands:</p>\n<pre><code>kubectl get deploy,rs,pods\nkubectl get pods -o wide\nkubectl logs &lt;pod&gt; --previous\nkubectl logs &lt;pod&gt;\nkubectl describe pod &lt;pod&gt;\nkubectl describe deploy api-service\nkubectl get pod &lt;pod&gt; -o yaml\nkubectl top pod</code></pre>\n<p>Check:</p>\n<ul><li>Application logs and exit code.</li><li><code>OOMKilled</code> or CPU throttling.</li><li>Probe failures.</li><li>Missing or changed ConfigMaps and Secrets.</li><li>Wrong image tag, command, args, or environment variables.</li><li>Broken dependency such as database, DNS, or external API.</li><li>Whether failures are isolated to one node.</li></ul>\n<p>Rollback when production impact continues, the issue correlates with the deployment, and there is no quick low-risk fix. Prefer the normal CI/CD rollback path if it is fast. For immediate mitigation:</p>\n<pre><code>kubectl rollout undo deployment/api-service\nkubectl rollout status deployment/api-service</code></pre>\n<p>Improve the deployment process with realistic readiness checks, startup probes for slow boot, pre-prod smoke tests, canaries or progressive delivery, and pipeline gates that fail when the rollout becomes unhealthy.</p>"
-    },
-    {
-      "id": "kubernetes.crashloopbackoff-triage-and-rollback",
-      "title": "CrashLoopBackOff Triage",
-      "technologies": [
-        "kubernetes"
-      ],
-      "areas": [
-        "troubleshooting",
-        "rollbacks",
-        "deployments"
-      ],
-      "tags": [
-        "crashloopbackoff",
-        "logs",
-        "events",
-        "rollback",
-        "oomkilled"
-      ],
-      "difficulty": "mid",
-      "question": "How do you diagnose a Kubernetes pod in CrashLoopBackOff after a deployment, and when should you roll back safely?",
-      "source": "cards/kubernetes/crashloopbackoff-triage-and-rollback.md",
-      "answerMarkdown": "Start by preserving evidence and checking the most recent failure cause. Inspect previous container logs and pod events, then confirm whether the restart reason is an app error, probe failure, missing config/secret, image problem, OOMKilled, or a node-specific issue.\n\nUseful commands:\n\n```sh\nkubectl get deploy,rs,pods\nkubectl describe deploy api-service\nkubectl logs api-service-7c9d8f6b7c-x92kq --previous\nkubectl describe pod api-service-7c9d8f6b7c-x92kq\nkubectl top pod\nkubectl get pod api-service-7c9d8f6b7c-x92kq -o yaml\nkubectl get pods -o wide\n```\n\nDecision criteria: if the issue began right after deployment, production is affected, and the root cause is not immediately fixable, rollback early rather than waiting for repeated failures. Use `kubectl rollout undo deployment api-service` for fast mitigation, or the CI/CD pipeline if it is the standard safe path.\n\nAfter recovery, improve deployment checks so the problem is caught earlier: stronger liveness/readiness probes, startup validation, config/secret verification, resource limits aligned with real usage, and staging or canary validation before full production rollout.",
-      "answerHtml": "<p>Start by preserving evidence and checking the most recent failure cause. Inspect previous container logs and pod events, then confirm whether the restart reason is an app error, probe failure, missing config/secret, image problem, OOMKilled, or a node-specific issue.</p>\n<p>Useful commands:</p>\n<pre><code>kubectl get deploy,rs,pods\nkubectl describe deploy api-service\nkubectl logs api-service-7c9d8f6b7c-x92kq --previous\nkubectl describe pod api-service-7c9d8f6b7c-x92kq\nkubectl top pod\nkubectl get pod api-service-7c9d8f6b7c-x92kq -o yaml\nkubectl get pods -o wide</code></pre>\n<p>Decision criteria: if the issue began right after deployment, production is affected, and the root cause is not immediately fixable, rollback early rather than waiting for repeated failures. Use <code>kubectl rollout undo deployment api-service</code> for fast mitigation, or the CI/CD pipeline if it is the standard safe path.</p>\n<p>After recovery, improve deployment checks so the problem is caught earlier: stronger liveness/readiness probes, startup validation, config/secret verification, resource limits aligned with real usage, and staging or canary validation before full production rollout.</p>"
     },
     {
       "id": "kubernetes.eks-intermittent-503-service",
@@ -973,30 +821,6 @@
       "answerHtml": "<p>HPA watches metrics and changes the replica count of a scalable target such as a Deployment.</p>\n<p>It needs:</p>\n<ul><li>A target with a scale subresource, usually a Deployment.</li><li>Metrics Server for CPU and memory metrics.</li><li>Resource requests on containers when scaling by CPU or memory utilization.</li><li>Sensible min and max replica counts.</li></ul>\n<p>Example:</p>\n<pre><code>apiVersion: autoscaling/v2\nkind: HorizontalPodAutoscaler\nmetadata:\n  name: api\nspec:\n  scaleTargetRef:\n    apiVersion: apps/v1\n    kind: Deployment\n    name: api\n  minReplicas: 2\n  maxReplicas: 10\n  metrics:\n    - type: Resource\n      resource:\n        name: cpu\n        target:\n          type: Utilization\n          averageUtilization: 70</code></pre>\n<p>Without resource requests, CPU utilization percentages do not have a reliable baseline.</p>"
     },
     {
-      "id": "kubernetes.hpa-cpu-scaling-troubleshooting",
-      "title": "HPA CPU Scaling Troubleshooting",
-      "technologies": [
-        "kubernetes",
-        "hpa",
-        "kubectl"
-      ],
-      "areas": [
-        "autoscaling",
-        "metrics"
-      ],
-      "tags": [
-        "cpu",
-        "requests",
-        "diagnostics",
-        "scaling"
-      ],
-      "difficulty": "mid",
-      "question": "How do you troubleshoot a Kubernetes HPA that does not scale even though traffic and node CPU are high?",
-      "source": "cards/kubernetes/hpa-cpu-scaling-troubleshooting.md",
-      "answerMarkdown": "1. **Immediate mitigation:** if latency is impacting users, manually scale replicas or raise `minReplicas`. Add nodes only if the cluster is actually out of capacity; node CPU being high does not automatically mean HPA should scale.\n\n2. **Investigate HPA state and real usage:**\n```bash\nkubectl get hpa\nkubectl describe hpa <name>\nkubectl top pods\nkubectl top nodes\nkubectl get --raw /apis/metrics.k8s.io/v1beta1/pods\n```\nCheck the `describe hpa` output for the current target, e.g. `20% / 70%`, and compare pod metrics with node metrics.\n\n3. **Decision criteria:** HPA CPU utilization is calculated from **pod CPU usage divided by `resources.requests.cpu`**, not from node CPU. If requests are set too high, HPA will think the app is lightly loaded. If node CPU is high but app pod CPU is low, the bottleneck may be memory, I/O, DB connections, external APIs, queues, or another workload on the node.\n\n4. **Concrete checks:** verify pod CPU requests in the deployment, then confirm whether the app is actually constrained by CPU or by another signal. For web/API workloads, CPU may be the wrong metric.\n\n5. **Prevention:** set realistic CPU requests and consider custom metrics such as RPS, latency, queue depth, or active connections when CPU does not reflect user-facing load.",
-      "answerHtml": "<p>1. <strong>Immediate mitigation:</strong> if latency is impacting users, manually scale replicas or raise <code>minReplicas</code>. Add nodes only if the cluster is actually out of capacity; node CPU being high does not automatically mean HPA should scale.</p>\n<p>2. <strong>Investigate HPA state and real usage:</strong></p>\n<pre><code>kubectl get hpa\nkubectl describe hpa &lt;name&gt;\nkubectl top pods\nkubectl top nodes\nkubectl get --raw /apis/metrics.k8s.io/v1beta1/pods</code></pre>\n<p>Check the <code>describe hpa</code> output for the current target, e.g. <code>20% / 70%</code>, and compare pod metrics with node metrics.</p>\n<p>3. <strong>Decision criteria:</strong> HPA CPU utilization is calculated from <strong>pod CPU usage divided by <code>resources.requests.cpu</code></strong>, not from node CPU. If requests are set too high, HPA will think the app is lightly loaded. If node CPU is high but app pod CPU is low, the bottleneck may be memory, I/O, DB connections, external APIs, queues, or another workload on the node.</p>\n<p>4. <strong>Concrete checks:</strong> verify pod CPU requests in the deployment, then confirm whether the app is actually constrained by CPU or by another signal. For web/API workloads, CPU may be the wrong metric.</p>\n<p>5. <strong>Prevention:</strong> set realistic CPU requests and consider custom metrics such as RPS, latency, queue depth, or active connections when CPU does not reflect user-facing load.</p>"
-    },
-    {
       "id": "kubernetes.hpa-troubleshooting",
       "title": "HPA troubleshooting when latency rises",
       "technologies": [
@@ -1017,55 +841,6 @@
       "source": "cards/kubernetes/hpa-troubleshooting.md",
       "answerMarkdown": "Start by separating node pressure from the metric HPA actually uses. HPA CPU utilization is based on pod CPU usage divided by container CPU requests, not node CPU.\n\nCheck HPA status and metrics:\n\n```bash\nkubectl get hpa\nkubectl describe hpa <name>\nkubectl top pods\nkubectl top nodes\nkubectl get --raw /apis/metrics.k8s.io/v1beta1/pods\nkubectl describe deploy <deployment>\n```\n\nVerify:\n\n- Metrics Server is working.\n- The target Deployment is correct.\n- Containers have realistic `resources.requests.cpu`.\n- HPA conditions do not show missing metrics or `FailedGetScale`.\n- The bottleneck is not memory, I/O, database connections, queue depth, external APIs, or another workload consuming node CPU.\n\nIf CPU is the wrong signal, scaling on CPU will not help. For web APIs and workers, better signals may be request rate, latency, queue depth, or active connections through custom or external metrics.\n\nImmediate mitigation can be manual replica scaling or increasing `minReplicas`. Add nodes only if cluster capacity is actually constrained.\n\nIf sidecars dilute pod-level CPU utilization, consider `ContainerResource` metrics where supported so HPA scales from the application container instead of the whole pod.",
       "answerHtml": "<p>Start by separating node pressure from the metric HPA actually uses. HPA CPU utilization is based on pod CPU usage divided by container CPU requests, not node CPU.</p>\n<p>Check HPA status and metrics:</p>\n<pre><code>kubectl get hpa\nkubectl describe hpa &lt;name&gt;\nkubectl top pods\nkubectl top nodes\nkubectl get --raw /apis/metrics.k8s.io/v1beta1/pods\nkubectl describe deploy &lt;deployment&gt;</code></pre>\n<p>Verify:</p>\n<ul><li>Metrics Server is working.</li><li>The target Deployment is correct.</li><li>Containers have realistic <code>resources.requests.cpu</code>.</li><li>HPA conditions do not show missing metrics or <code>FailedGetScale</code>.</li><li>The bottleneck is not memory, I/O, database connections, queue depth, external APIs, or another workload consuming node CPU.</li></ul>\n<p>If CPU is the wrong signal, scaling on CPU will not help. For web APIs and workers, better signals may be request rate, latency, queue depth, or active connections through custom or external metrics.</p>\n<p>Immediate mitigation can be manual replica scaling or increasing <code>minReplicas</code>. Add nodes only if cluster capacity is actually constrained.</p>\n<p>If sidecars dilute pod-level CPU utilization, consider <code>ContainerResource</code> metrics where supported so HPA scales from the application container instead of the whole pod.</p>"
-    },
-    {
-      "id": "kubernetes.rollout-status-vs-traffic-readiness",
-      "title": "Rollout Status and Traffic Readiness",
-      "technologies": [
-        "kubernetes",
-        "gitlab-ci",
-        "kubectl"
-      ],
-      "areas": [
-        "readiness",
-        "rollout",
-        "service-discovery"
-      ],
-      "tags": [
-        "readinessprobe",
-        "livenessprobe",
-        "startupprobe",
-        "service",
-        "ingress"
-      ],
-      "difficulty": "mid",
-      "question": "How do you diagnose a Kubernetes deployment that reports a successful rollout but users still see intermittent 503 errors?",
-      "source": "cards/kubernetes/rollout-status-vs-traffic-readiness.md",
-      "answerMarkdown": "Start by assuming the deployment may be **Ready for Kubernetes** but not truly ready for traffic. `kubectl rollout status` only confirms the Deployment reached the desired replica count and the pods became Ready; it does **not** prove the app is functionally healthy.\n\n1. **Immediate check:** verify whether the Service still has valid backends.\n   - `kubectl get svc`\n   - `kubectl get endpoints api-service`\n   - `kubectl get endpointslices`\n   - `kubectl describe svc api-service`\n\n2. **Investigate readiness vs runtime health:**\n   - `Running` means the container process exists.\n   - `Ready` means the pod can receive traffic according to `readinessProbe`.\n   - If the probe is too shallow, pods can become Ready before the app is actually usable.\n   - Use `livenessProbe` for process recovery and `startupProbe` for slow startups so readiness is not evaluated too early.\n\n3. **Look for selector/label mismatch:**\n   - Compare Service selector with pod labels.\n   - `kubectl get pods --show-labels`\n   - A mismatch can cause some pods to be excluded from endpoints, producing intermittent 503s.\n\n4. **Validate the rollout beyond status:**\n   - Run smoke tests after deploy against a real endpoint, not only `kubectl rollout status`.\n   - Check the Ingress path, Service routing, and backend endpoint stability.\n   - Add checks for business-critical endpoints, not just `/health`.\n\n5. **Rollback criteria:**\n   - If 503s continue and correlate with the new deployment, rollback quickly.\n   - Command: `kubectl rollout undo deployment/api-service`\n\n6. **Prevention:**\n   - Make readiness checks reflect real user-facing readiness.\n   - Add `startupProbe` for long initialization.\n   - Add post-deploy smoke tests and alerting on 5xx/error rate so the pipeline fails on real traffic issues, not only on Kubernetes rollout success.",
-      "answerHtml": "<p>Start by assuming the deployment may be <strong>Ready for Kubernetes</strong> but not truly ready for traffic. <code>kubectl rollout status</code> only confirms the Deployment reached the desired replica count and the pods became Ready; it does <strong>not</strong> prove the app is functionally healthy.</p>\n<p>1. <strong>Immediate check:</strong> verify whether the Service still has valid backends.</p>\n<ul><li><code>kubectl get svc</code></li><li><code>kubectl get endpoints api-service</code></li><li><code>kubectl get endpointslices</code></li><li><code>kubectl describe svc api-service</code></li></ul>\n<p>2. <strong>Investigate readiness vs runtime health:</strong></p>\n<ul><li><code>Running</code> means the container process exists.</li><li><code>Ready</code> means the pod can receive traffic according to <code>readinessProbe</code>.</li><li>If the probe is too shallow, pods can become Ready before the app is actually usable.</li><li>Use <code>livenessProbe</code> for process recovery and <code>startupProbe</code> for slow startups so readiness is not evaluated too early.</li></ul>\n<p>3. <strong>Look for selector/label mismatch:</strong></p>\n<ul><li>Compare Service selector with pod labels.</li><li><code>kubectl get pods --show-labels</code></li><li>A mismatch can cause some pods to be excluded from endpoints, producing intermittent 503s.</li></ul>\n<p>4. <strong>Validate the rollout beyond status:</strong></p>\n<ul><li>Run smoke tests after deploy against a real endpoint, not only <code>kubectl rollout status</code>.</li><li>Check the Ingress path, Service routing, and backend endpoint stability.</li><li>Add checks for business-critical endpoints, not just <code>/health</code>.</li></ul>\n<p>5. <strong>Rollback criteria:</strong></p>\n<ul><li>If 503s continue and correlate with the new deployment, rollback quickly.</li><li>Command: <code>kubectl rollout undo deployment/api-service</code></li></ul>\n<p>6. <strong>Prevention:</strong></p>\n<ul><li>Make readiness checks reflect real user-facing readiness.</li><li>Add <code>startupProbe</code> for long initialization.</li><li>Add post-deploy smoke tests and alerting on 5xx/error rate so the pipeline fails on real traffic issues, not only on Kubernetes rollout success.</li></ul>"
-    },
-    {
-      "id": "kubernetes.rollout-success-503",
-      "title": "Rollout succeeds but users get 503",
-      "technologies": [
-        "kubernetes"
-      ],
-      "areas": [
-        "troubleshooting"
-      ],
-      "tags": [
-        "rollout",
-        "readiness",
-        "service",
-        "ingress",
-        "endpoints",
-        "rollback"
-      ],
-      "difficulty": "senior",
-      "question": "GitLab deploy and kubectl rollout status succeed, but users see intermittent 503s. What do you verify?",
-      "source": "cards/kubernetes/rollout-success-503.md",
-      "answerMarkdown": "`Running` means the container process exists. `Ready` means Kubernetes believes the pod can receive traffic. Neither proves the application works for real users.\n\n`kubectl rollout status` mostly checks whether the Deployment created new pods and reached available replicas. If `readinessProbe` is too shallow, rollout can succeed while the app still returns 503.\n\nCheck traffic routing:\n\n```bash\nkubectl get pods --show-labels\nkubectl describe pod <pod>\nkubectl describe svc api-service\nkubectl get endpoints api-service\nkubectl get endpointslices\nkubectl describe ingress <ingress>\nkubectl logs <pod>\n```\n\nLook for:\n\n- Readiness probe that returns success before the app can serve real traffic.\n- Missing `startupProbe` for slow startup.\n- Liveness probe restarting healthy-but-slow pods.\n- Service selector and pod label mismatch.\n- EndpointSlices flapping or containing fewer endpoints than expected.\n- Ingress or load balancer health checks disagreeing with Kubernetes readiness.\n\nThe pipeline should validate more than rollout status:\n\n- Run smoke tests against the real route after deploy.\n- Check a version endpoint and at least one meaningful business endpoint.\n- Watch 5xx rate, latency, and endpoint count for a short window.\n- Automatically rollback or require approval when health checks fail.\n\nRollback if user impact continues and the errors correlate with the deploy:\n\n```bash\nkubectl rollout undo deployment/api-service\n```",
-      "answerHtml": "<p><code>Running</code> means the container process exists. <code>Ready</code> means Kubernetes believes the pod can receive traffic. Neither proves the application works for real users.</p>\n<p><code>kubectl rollout status</code> mostly checks whether the Deployment created new pods and reached available replicas. If <code>readinessProbe</code> is too shallow, rollout can succeed while the app still returns 503.</p>\n<p>Check traffic routing:</p>\n<pre><code>kubectl get pods --show-labels\nkubectl describe pod &lt;pod&gt;\nkubectl describe svc api-service\nkubectl get endpoints api-service\nkubectl get endpointslices\nkubectl describe ingress &lt;ingress&gt;\nkubectl logs &lt;pod&gt;</code></pre>\n<p>Look for:</p>\n<ul><li>Readiness probe that returns success before the app can serve real traffic.</li><li>Missing <code>startupProbe</code> for slow startup.</li><li>Liveness probe restarting healthy-but-slow pods.</li><li>Service selector and pod label mismatch.</li><li>EndpointSlices flapping or containing fewer endpoints than expected.</li><li>Ingress or load balancer health checks disagreeing with Kubernetes readiness.</li></ul>\n<p>The pipeline should validate more than rollout status:</p>\n<ul><li>Run smoke tests against the real route after deploy.</li><li>Check a version endpoint and at least one meaningful business endpoint.</li><li>Watch 5xx rate, latency, and endpoint count for a short window.</li><li>Automatically rollback or require approval when health checks fail.</li></ul>\n<p>Rollback if user impact continues and the errors correlate with the deploy:</p>\n<pre><code>kubectl rollout undo deployment/api-service</code></pre>"
     },
     {
       "id": "kubernetes.scale-up-timeouts-debugging",
@@ -1112,60 +887,6 @@
       "answerHtml": "<p><strong>Atlantis</strong> is open source, self-hosted, and pull-request driven. Engineers comment <code>atlantis plan</code> and <code>atlantis apply</code>.</p>\n<p>Pros: strong PR workflow, control, low vendor lock-in. Cons: you operate it, add your own policy tooling, and manage state backend details.</p>\n<p><strong>HCP Terraform</strong> is managed by HashiCorp.</p>\n<p>Pros: run history, RBAC, state management, policy features in paid tiers, drift workflows. Cons: cost, vendor lock-in, and less attractive if your organization standardizes on OpenTofu.</p>\n<p><strong>Custom GitLab CI</strong> uses the tooling you already have.</p>\n<p>Pros: flexible, integrated with existing CI, good OIDC story, easy to add OPA or Conftest. Cons: every workflow detail is your YAML, and comment-based PR ergonomics need extra work.</p>\n<p>The decision depends on team size, existing CI investment, budget, and willingness to operate another service.</p>"
     },
     {
-      "id": "terraform.aws-drift-security-group",
-      "title": "AWS Security Group Drift",
-      "technologies": [
-        "terraform",
-        "aws",
-        "gitlab",
-        "cloudtrail"
-      ],
-      "areas": [
-        "drift",
-        "state",
-        "security-group"
-      ],
-      "tags": [
-        "drift",
-        "cloudtrail",
-        "plan",
-        "state",
-        "sg"
-      ],
-      "difficulty": "mid",
-      "question": "How should you handle Terraform drift when an AWS security group was changed manually in production?",
-      "source": "cards/terraform/aws-drift-security-group.md",
-      "answerMarkdown": "First decide whether the manual change was intentional, temporary, or accidental. If it was an emergency workaround and is still needed, encode it in Terraform and review it through Git so code becomes the source of truth again. If it is unsafe or no longer required, let Terraform remove it on the next apply.\n\nInvestigate drift from three sides: AWS live configuration, Terraform state, and the repository code. Check the current state, compare it with AWS, and look for any incident or change record that explains why the rule exists.\n\nUseful commands:\n```bash\nterraform plan\nterraform state show aws_security_group.example\naws ec2 describe-security-groups --group-ids sg-...\naws cloudtrail lookup-events --lookup-attributes AttributeKey=ResourceName,AttributeValue=sg-...\n```\n\nDecision rule: accept the change only if it is still required and reviewed; otherwise remove it. To prevent repeats, restrict direct console edits with IAM, require changes through GitLab/Terraform pipelines, and keep CloudTrail plus alerting for manual production changes.",
-      "answerHtml": "<p>First decide whether the manual change was intentional, temporary, or accidental. If it was an emergency workaround and is still needed, encode it in Terraform and review it through Git so code becomes the source of truth again. If it is unsafe or no longer required, let Terraform remove it on the next apply.</p>\n<p>Investigate drift from three sides: AWS live configuration, Terraform state, and the repository code. Check the current state, compare it with AWS, and look for any incident or change record that explains why the rule exists.</p>\n<p>Useful commands:</p>\n<pre><code>terraform plan\nterraform state show aws_security_group.example\naws ec2 describe-security-groups --group-ids sg-...\naws cloudtrail lookup-events --lookup-attributes AttributeKey=ResourceName,AttributeValue=sg-...</code></pre>\n<p>Decision rule: accept the change only if it is still required and reviewed; otherwise remove it. To prevent repeats, restrict direct console edits with IAM, require changes through GitLab/Terraform pipelines, and keep CloudTrail plus alerting for manual production changes.</p>"
-    },
-    {
-      "id": "terraform.branching-strategies",
-      "title": "Branching strategy selection",
-      "technologies": [
-        "terraform",
-        "git",
-        "github",
-        "gitlab"
-      ],
-      "areas": [
-        "version-control",
-        "release-management",
-        "deployment"
-      ],
-      "tags": [
-        "git-flow",
-        "github-flow",
-        "gitlab-flow",
-        "trunk-based",
-        "branching"
-      ],
-      "difficulty": "mid",
-      "question": "How do Git Flow, GitHub Flow, GitLab Flow, and trunk-based development differ, and when should you choose each strategy?",
-      "source": "cards/terraform/branching-strategies.md",
-      "answerMarkdown": "Choose based on **release model**, **branch lifetime**, and **deployment maturity**.\n\n- **Git Flow**: long-lived `main` and `develop`; `feature/*` branch from `develop`; `release/*` for stabilization; `hotfix/*` from `main`. Best for **versioned, discrete releases** such as mobile apps, desktop software, libraries, or firmware. Weak fit for CD because it increases merge complexity and integration delay.\n- **GitHub Flow**: only one long-lived branch, `main`, which must stay deployable. Work happens on short-lived branches, then PR -> CI/review -> merge -> deploy. Best for **web/SaaS with continuous deployment**. Simple and fast, but assumes strong CI and often feature flags.\n- **GitLab Flow**: GitHub Flow plus either **environment branches** (`main` -> `pre-production` -> `production`) or **release branches** (`release/X.Y`). Good when you need **auditable promotion across environments**, gated deploys, or support for older versions.\n- **Trunk-based development**: developers commit directly to `main` or use branches that live less than a day; incomplete work is hidden behind feature flags. Best for **high-velocity, mature engineering organizations** with strong CI, monitoring, and fast rollback.\n\n**Decision criteria**\n1. Need formal, versioned releases? Use **Git Flow** or **GitLab Flow with release branches**.\n2. Need simple continuous delivery to a single target? Use **GitHub Flow**.\n3. Need controlled promotion between environments or compliance evidence? Use **GitLab Flow with environment branches**.\n4. Need maximum throughput and can enforce strict engineering discipline? Use **trunk-based development**.\n\n**Rule of thumb**: for modern web/CD, prefer **GitHub Flow** or **trunk-based**. Do not treat **Git Flow** as the default; it is mainly useful when the release itself is a first-class process.",
-      "answerHtml": "<p>Choose based on <strong>release model</strong>, <strong>branch lifetime</strong>, and <strong>deployment maturity</strong>.</p>\n<ul><li><strong>Git Flow</strong>: long-lived <code>main</code> and <code>develop</code>; <code>feature/<em></code> branch from <code>develop</code>; <code>release/</em></code> for stabilization; <code>hotfix/*</code> from <code>main</code>. Best for <strong>versioned, discrete releases</strong> such as mobile apps, desktop software, libraries, or firmware. Weak fit for CD because it increases merge complexity and integration delay.</li><li><strong>GitHub Flow</strong>: only one long-lived branch, <code>main</code>, which must stay deployable. Work happens on short-lived branches, then PR -&gt; CI/review -&gt; merge -&gt; deploy. Best for <strong>web/SaaS with continuous deployment</strong>. Simple and fast, but assumes strong CI and often feature flags.</li><li><strong>GitLab Flow</strong>: GitHub Flow plus either <strong>environment branches</strong> (<code>main</code> -&gt; <code>pre-production</code> -&gt; <code>production</code>) or <strong>release branches</strong> (<code>release/X.Y</code>). Good when you need <strong>auditable promotion across environments</strong>, gated deploys, or support for older versions.</li><li><strong>Trunk-based development</strong>: developers commit directly to <code>main</code> or use branches that live less than a day; incomplete work is hidden behind feature flags. Best for <strong>high-velocity, mature engineering organizations</strong> with strong CI, monitoring, and fast rollback.</li></ul>\n<p><strong>Decision criteria</strong> 1. Need formal, versioned releases? Use <strong>Git Flow</strong> or <strong>GitLab Flow with release branches</strong>. 2. Need simple continuous delivery to a single target? Use <strong>GitHub Flow</strong>. 3. Need controlled promotion between environments or compliance evidence? Use <strong>GitLab Flow with environment branches</strong>. 4. Need maximum throughput and can enforce strict engineering discipline? Use <strong>trunk-based development</strong>.</p>\n<p><strong>Rule of thumb</strong>: for modern web/CD, prefer <strong>GitHub Flow</strong> or <strong>trunk-based</strong>. Do not treat <strong>Git Flow</strong> as the default; it is mainly useful when the release itself is a first-class process.</p>"
-    },
-    {
       "id": "terraform.ci-credentials-oidc",
       "title": "CI credentials with OIDC",
       "technologies": [
@@ -1184,8 +905,8 @@
       "difficulty": "senior",
       "question": "How should Terraform authenticate to AWS in CI, and why are long-lived access keys an anti-pattern?",
       "source": "cards/terraform/ci-credentials-oidc.md",
-      "answerMarkdown": "Long-lived `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` values in CI secrets are risky:\n\n- Stolen once means usable for a long time.\n- Rotation is manual and often forgotten.\n- Audit trails are weaker.\n- Logs and runner environments can leak secrets.\n\nPrefer OIDC. The CI system issues a short-lived identity token, and AWS validates it with `sts:AssumeRoleWithWebIdentity`.\n\nBenefits:\n\n- No static cloud secret in CI.\n- Short-lived credentials.\n- Per-environment roles.\n- Better audit trail through role session names and trust policy conditions.\n\nTrust policies should restrict both `aud` and `sub`, for example to a specific repository, branch, or protected environment.",
-      "answerHtml": "<p>Long-lived <code>AWS_ACCESS_KEY_ID</code> and <code>AWS_SECRET_ACCESS_KEY</code> values in CI secrets are risky:</p>\n<ul><li>Stolen once means usable for a long time.</li><li>Rotation is manual and often forgotten.</li><li>Audit trails are weaker.</li><li>Logs and runner environments can leak secrets.</li></ul>\n<p>Prefer OIDC. The CI system issues a short-lived identity token, and AWS validates it with <code>sts:AssumeRoleWithWebIdentity</code>.</p>\n<p>Benefits:</p>\n<ul><li>No static cloud secret in CI.</li><li>Short-lived credentials.</li><li>Per-environment roles.</li><li>Better audit trail through role session names and trust policy conditions.</li></ul>\n<p>Trust policies should restrict both <code>aud</code> and <code>sub</code>, for example to a specific repository, branch, or protected environment.</p>"
+      "answerMarkdown": "Long-lived `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` values in CI secrets are risky:\n\n- Stolen once means usable for a long time.\n- Rotation is manual and often forgotten.\n- Audit trails are weaker.\n- Logs and runner environments can leak secrets.\n\nPrefer OIDC. The CI system issues a short-lived identity token, and AWS validates it with `sts:AssumeRoleWithWebIdentity`.\n\nIn GitHub Actions, the workflow or job that requests an OIDC token also needs explicit `id-token: write` permission.\n\nBenefits:\n\n- No static cloud secret in CI.\n- Short-lived credentials.\n- Per-environment roles.\n- Better audit trail through role session names and trust policy conditions.\n\nTrust policies should restrict both `aud` and `sub`, for example to a specific repository, branch, or protected environment.",
+      "answerHtml": "<p>Long-lived <code>AWS_ACCESS_KEY_ID</code> and <code>AWS_SECRET_ACCESS_KEY</code> values in CI secrets are risky:</p>\n<ul><li>Stolen once means usable for a long time.</li><li>Rotation is manual and often forgotten.</li><li>Audit trails are weaker.</li><li>Logs and runner environments can leak secrets.</li></ul>\n<p>Prefer OIDC. The CI system issues a short-lived identity token, and AWS validates it with <code>sts:AssumeRoleWithWebIdentity</code>.</p>\n<p>In GitHub Actions, the workflow or job that requests an OIDC token also needs explicit <code>id-token: write</code> permission.</p>\n<p>Benefits:</p>\n<ul><li>No static cloud secret in CI.</li><li>Short-lived credentials.</li><li>Per-environment roles.</li><li>Better audit trail through role session names and trust policy conditions.</li></ul>\n<p>Trust policies should restrict both <code>aud</code> and <code>sub</code>, for example to a specific repository, branch, or protected environment.</p>"
     },
     {
       "id": "terraform.count-vs-for-each",
@@ -1295,29 +1016,6 @@
       "answerHtml": "<p>The symptom is usually explicit:</p>\n<pre><code>Error: Cycle: aws_security_group.app, aws_security_group.db</code></pre>\n<p>To inspect the graph:</p>\n<pre><code>terraform graph | dot -Tsvg &gt; graph.svg</code></pre>\n<p>A common case is mutual security group references. The fix is to create the security groups first, then create rules as separate resources.</p>\n<pre><code>resource &quot;aws_security_group&quot; &quot;app&quot; { name = &quot;app&quot; }\nresource &quot;aws_security_group&quot; &quot;db&quot;  { name = &quot;db&quot; }\n\nresource &quot;aws_vpc_security_group_ingress_rule&quot; &quot;db_from_app&quot; {\n  security_group_id            = aws_security_group.db.id\n  referenced_security_group_id = aws_security_group.app.id\n  from_port                    = 5432\n  to_port                      = 5432\n  ip_protocol                  = &quot;tcp&quot;\n}</code></pre>\n<p>Other cycle sources include bidirectional <code>depends_on</code>, data sources that depend on resources that depend on the data source, and IAM policies referencing each other.</p>"
     },
     {
-      "id": "terraform.drift-manual-subnet-delete",
-      "title": "Terraform Drift After Subnet Deletion",
-      "technologies": [
-        "terraform",
-        "aws"
-      ],
-      "areas": [
-        "drift",
-        "state"
-      ],
-      "tags": [
-        "drift",
-        "subnet",
-        "cloudtrail",
-        "production"
-      ],
-      "difficulty": "mid",
-      "question": "How should you respond when Terraform fails with InvalidSubnetID.NotFound because a subnet was manually deleted in AWS, and what should you check before applying a fix?",
-      "source": "cards/terraform/drift-manual-subnet-delete.md",
-      "answerMarkdown": "1. **Freeze deployments** that touch the affected VPC/subnet path to avoid making the outage wider.\n2. **Investigate drift** with `terraform plan`, `terraform state list`, and `terraform state show aws_subnet.xxx`. Confirm the subnet is gone from AWS, not just from Terraform.\n3. **Check dependencies before apply**: route table associations, NAT routes, ASG subnet lists, target groups, ENIs, EKS node groups, and RDS subnet groups. These may also need update or recreate.\n4. **Apply the corrected Terraform** to recreate the subnet with the same CIDR/tags if needed, but expect a **new subnet ID**; a deleted subnet cannot be restored 1:1.\n\n```sh\nterraform plan\nterraform state list\nterraform state show aws_subnet.xxx\naws ec2 describe-subnets --subnet-ids subnet-...\naws cloudtrail lookup-events\n```\n\n5. **Prevent recurrence** with IAM/SCP deny for manual subnet deletion in prod, break-glass access only, CloudTrail alerts, AWS Config, and drift-detection in the pipeline.",
-      "answerHtml": "<p>1. <strong>Freeze deployments</strong> that touch the affected VPC/subnet path to avoid making the outage wider. 2. <strong>Investigate drift</strong> with <code>terraform plan</code>, <code>terraform state list</code>, and <code>terraform state show aws_subnet.xxx</code>. Confirm the subnet is gone from AWS, not just from Terraform. 3. <strong>Check dependencies before apply</strong>: route table associations, NAT routes, ASG subnet lists, target groups, ENIs, EKS node groups, and RDS subnet groups. These may also need update or recreate. 4. <strong>Apply the corrected Terraform</strong> to recreate the subnet with the same CIDR/tags if needed, but expect a <strong>new subnet ID</strong>; a deleted subnet cannot be restored 1:1.</p>\n<pre><code>terraform plan\nterraform state list\nterraform state show aws_subnet.xxx\naws ec2 describe-subnets --subnet-ids subnet-...\naws cloudtrail lookup-events</code></pre>\n<p>5. <strong>Prevent recurrence</strong> with IAM/SCP deny for manual subnet deletion in prod, break-glass access only, CloudTrail alerts, AWS Config, and drift-detection in the pipeline.</p>"
-    },
-    {
       "id": "terraform.dynamic-blocks",
       "title": "Dynamic blocks",
       "technologies": [
@@ -1365,33 +1063,6 @@
       "answerHtml": "<p>1. <strong>Immediate safety</strong> Do <strong>not</strong> apply blindly. Treat the PR description as untrusted and review the saved plan. Here, this is <strong>not</strong> a tag-only change: <code>identifier</code>, security group <code>name</code>, and target group <code>port</code> are <strong>ForceNew</strong> attributes, so Terraform plans replacement.</p>\n<p>2. <strong>Investigation</strong> Compare <strong>three sources</strong>: Git diff, Terraform state, and the real cloud resource/API. Use <code>terraform plan</code> for normal analysis, or <code>terraform plan -refresh-only</code> to detect drift without proposing config changes. Distinguish:</p>\n<ul><li><strong>Drift</strong>: infra changed outside Terraform</li><li><strong>Refactor</strong>: resource address changed in code, physical object should stay the same</li><li><strong>Real change</strong>: physical attribute changed, replacement may be expected</li></ul>\n<p>3. <strong>Decision criteria</strong></p>\n<ul><li>Use <code>terraform state mv</code> when only the <strong>resource address</strong> changed, e.g. rename <code>aws_db_instance.prod</code> to <code>aws_db_instance.main</code></li><li>Use <code>terraform import</code> when the resource already exists but is <strong>not in state</strong></li><li>Use <code>lifecycle { prevent_destroy = true }</code> on critical resources such as production databases</li><li>Use <code>ignore_changes</code> only for intentionally external/noisy fields, <strong>not</strong> to hide dangerous drift</li></ul>\n<p>4. <strong>Critical resources and rollout</strong> Never replace production databases, VPCs, subnets, NAT gateways, load balancers, target groups, EKS clusters, or critical IAM roles &quot;in the dark&quot;. If replacement is truly required, do it as a migration: create new resource, attach dependencies, shift traffic gradually, validate health, keep rollback, then retire the old one.</p>\n<pre><code>terraform plan\nterraform plan -refresh-only\nterraform state mv aws_db_instance.prod aws_db_instance.main\nterraform import aws_security_group.app sg-0123456789abcdef0</code></pre>\n<p>5. <strong>Prevention and senior PR review</strong> Require reviewed plan artifacts, manual approval for production apply, protected branches/environments, state locking, and policy checks that block destructive changes unless explicitly approved. In review, check ForceNew fields, blast radius, dependency chains, rollback path, and whether the change is drift, refactor, or a real design change.</p>"
     },
     {
-      "id": "terraform.github-actions-dind-matched-paths",
-      "title": "GitHub Actions DinD path mismatch",
-      "technologies": [
-        "terraform",
-        "github-actions",
-        "docker",
-        "dind"
-      ],
-      "areas": [
-        "ci",
-        "containers",
-        "runner-storage"
-      ],
-      "tags": [
-        "github-actions",
-        "dind",
-        "bind-mounts",
-        "self-hosted-runner",
-        "container-jobs"
-      ],
-      "difficulty": "senior",
-      "question": "Why can a self-hosted GitHub Actions runner using Docker-in-Docker fail immediately on a `container:` job step with exit code 1, and how do you fix it without removing DinD?",
-      "source": "cards/terraform/github-actions-dind-matched-paths.md",
-      "answerMarkdown": "The usual cause is a **workspace path mismatch between the runner container and the DinD daemon container**. Official `actions/runner` handles `container:` jobs by creating a script under `_work/_temp`, then asking Docker to **bind-mount** `<runner_home>/_work` into the job container and execute that script from `/__w/_temp/...`.\n\nIf the Docker daemon is DinD, the bind mount is resolved from the **daemon container filesystem**, not the runner container. When the same path does not exist inside DinD, Docker mounts an empty directory, so `bash /__w/_temp/<uuid>.sh` is missing and exits almost instantly.\n\n1. **Immediate check**: inspect `_diag/Worker_*.log` for `docker create ... -v <runner_home>/_work:/__w` followed by `docker exec ... bash /__w/_temp/<uuid>.sh` and a fast failure.\n2. **Confirm** from the DinD container that `<runner_home>/_work/_temp` is missing or empty.\n3. **Fix**: make `_work` visible under the **same absolute path** in both runner and DinD.\n\n```yaml\nservices:\n  github-dind:\n    volumes:\n      - ./data:/runners\n\n  runner:\n    environment:\n      RUNNER_HOME: /runners/fiszki\n    volumes:\n      - ./data/fiszki:/runners/fiszki\n```\n\nAlso make the runner use `RUNNER_HOME` consistently in entrypoint/init logic.\n\nThis differs from Gitea `act_runner`, which uses named volumes and `docker cp`, so it does not require matched host paths. **Prevention**: standardize runner home paths, document DinD path requirements, and validate `_work` visibility from the daemon during provisioning.",
-      "answerHtml": "<p>The usual cause is a <strong>workspace path mismatch between the runner container and the DinD daemon container</strong>. Official <code>actions/runner</code> handles <code>container:</code> jobs by creating a script under <code>_work/_temp</code>, then asking Docker to <strong>bind-mount</strong> <code>&lt;runner_home&gt;/_work</code> into the job container and execute that script from <code>/__w/_temp/...</code>.</p>\n<p>If the Docker daemon is DinD, the bind mount is resolved from the <strong>daemon container filesystem</strong>, not the runner container. When the same path does not exist inside DinD, Docker mounts an empty directory, so <code>bash /__w/_temp/&lt;uuid&gt;.sh</code> is missing and exits almost instantly.</p>\n<p>1. <strong>Immediate check</strong>: inspect <code>_diag/Worker_*.log</code> for <code>docker create ... -v &lt;runner_home&gt;/_work:/__w</code> followed by <code>docker exec ... bash /__w/_temp/&lt;uuid&gt;.sh</code> and a fast failure. 2. <strong>Confirm</strong> from the DinD container that <code>&lt;runner_home&gt;/_work/_temp</code> is missing or empty. 3. <strong>Fix</strong>: make <code>_work</code> visible under the <strong>same absolute path</strong> in both runner and DinD.</p>\n<pre><code>services:\n  github-dind:\n    volumes:\n      - ./data:/runners\n\n  runner:\n    environment:\n      RUNNER_HOME: /runners/fiszki\n    volumes:\n      - ./data/fiszki:/runners/fiszki</code></pre>\n<p>Also make the runner use <code>RUNNER_HOME</code> consistently in entrypoint/init logic.</p>\n<p>This differs from Gitea <code>act_runner</code>, which uses named volumes and <code>docker cp</code>, so it does not require matched host paths. <strong>Prevention</strong>: standardize runner home paths, document DinD path requirements, and validate <code>_work</code> visibility from the daemon during provisioning.</p>"
-    },
-    {
       "id": "terraform.import-existing-resource",
       "title": "Importing existing resources",
       "technologies": [
@@ -1411,55 +1082,6 @@
       "source": "cards/terraform/import-existing-resource.md",
       "answerMarkdown": "Prefer declarative import blocks in modern Terraform.\n\n```hcl\nimport {\n  to = aws_s3_bucket.legacy\n  id = \"my-existing-bucket\"\n}\n\nresource \"aws_s3_bucket\" \"legacy\" {\n  bucket = \"my-existing-bucket\"\n}\n```\n\nThen run:\n\n```bash\nterraform plan -generate-config-out=generated.tf\n```\n\nThis gives you reviewable code and a plan that shows exactly what will be imported.\n\nThe older `terraform import` CLI command works, but it is imperative and easy to forget in Git history:\n\n```bash\nterraform import aws_s3_bucket.legacy my-existing-bucket\n```\n\nIf you import into state but never add matching HCL, a later plan can become confusing or dangerous.",
       "answerHtml": "<p>Prefer declarative import blocks in modern Terraform.</p>\n<pre><code>import {\n  to = aws_s3_bucket.legacy\n  id = &quot;my-existing-bucket&quot;\n}\n\nresource &quot;aws_s3_bucket&quot; &quot;legacy&quot; {\n  bucket = &quot;my-existing-bucket&quot;\n}</code></pre>\n<p>Then run:</p>\n<pre><code>terraform plan -generate-config-out=generated.tf</code></pre>\n<p>This gives you reviewable code and a plan that shows exactly what will be imported.</p>\n<p>The older <code>terraform import</code> CLI command works, but it is imperative and easy to forget in Git history:</p>\n<pre><code>terraform import aws_s3_bucket.legacy my-existing-bucket</code></pre>\n<p>If you import into state but never add matching HCL, a later plan can become confusing or dangerous.</p>"
-    },
-    {
-      "id": "terraform.investigate-replacement-plan",
-      "title": "Investigating unexpected replacement plans",
-      "technologies": [
-        "terraform",
-        "aws"
-      ],
-      "areas": [
-        "cicd"
-      ],
-      "tags": [
-        "plan",
-        "replacement",
-        "prevent-destroy",
-        "providers",
-        "drift"
-      ],
-      "difficulty": "senior",
-      "question": "A tiny tag change produces a Terraform plan with production destroys and replacements. How do you investigate?",
-      "source": "cards/terraform/investigate-replacement-plan.md",
-      "answerMarkdown": "Stop the merge request until the replacement reason is understood. Tag changes are usually in-place, so `-/+` replacements are a red flag.\n\nRead the plan for `forces replacement` and identify the exact attributes:\n\n```bash\nterraform plan -out=tfplan\nterraform show tfplan\nterraform show -json tfplan > tfplan.json\nterraform state show aws_db_instance.prod\nterraform state show aws_lb_target_group.api_tg\nterraform state list\ngit diff\n```\n\nCheck likely causes:\n\n- An immutable argument changed, such as RDS `identifier`, engine, subnet group, target group port, protocol, target type, or VPC ID.\n- The provider or module version changed.\n- There is drift in AWS.\n- The resource was imported into the wrong address or with incomplete HCL.\n- A module refactor changed resource addresses without a `moved` block or `terraform state mv`.\n\nUse `terraform providers lock` when provider lock files are missing or inconsistent across platforms. Use `terraform import` when a real resource exists but is not correctly in state. Use `terraform state mv` or `moved` blocks when the resource address changed but the object should stay the same.\n\nProduction databases need multiple guards:\n\n- `lifecycle { prevent_destroy = true }`\n- Provider-native deletion protection, such as RDS `deletion_protection = true`\n- Manual approval for prod\n- CI policy that blocks destructive plans unless explicitly reviewed\n- Backup or snapshot strategy before risky changes",
-      "answerHtml": "<p>Stop the merge request until the replacement reason is understood. Tag changes are usually in-place, so <code>-/+</code> replacements are a red flag.</p>\n<p>Read the plan for <code>forces replacement</code> and identify the exact attributes:</p>\n<pre><code>terraform plan -out=tfplan\nterraform show tfplan\nterraform show -json tfplan &gt; tfplan.json\nterraform state show aws_db_instance.prod\nterraform state show aws_lb_target_group.api_tg\nterraform state list\ngit diff</code></pre>\n<p>Check likely causes:</p>\n<ul><li>An immutable argument changed, such as RDS <code>identifier</code>, engine, subnet group, target group port, protocol, target type, or VPC ID.</li><li>The provider or module version changed.</li><li>There is drift in AWS.</li><li>The resource was imported into the wrong address or with incomplete HCL.</li><li>A module refactor changed resource addresses without a <code>moved</code> block or <code>terraform state mv</code>.</li></ul>\n<p>Use <code>terraform providers lock</code> when provider lock files are missing or inconsistent across platforms. Use <code>terraform import</code> when a real resource exists but is not correctly in state. Use <code>terraform state mv</code> or <code>moved</code> blocks when the resource address changed but the object should stay the same.</p>\n<p>Production databases need multiple guards:</p>\n<ul><li><code>lifecycle { prevent_destroy = true }</code></li><li>Provider-native deletion protection, such as RDS <code>deletion_protection = true</code></li><li>Manual approval for prod</li><li>CI policy that blocks destructive plans unless explicitly reviewed</li><li>Backup or snapshot strategy before risky changes</li></ul>"
-    },
-    {
-      "id": "terraform.lock-stuck-handling",
-      "title": "Terraform Lock Handling",
-      "technologies": [
-        "terraform",
-        "gitlab",
-        "aws",
-        "dynamodb"
-      ],
-      "areas": [
-        "state",
-        "locking",
-        "pipeline"
-      ],
-      "tags": [
-        "force-unlock",
-        "resource-group",
-        "dynamodb",
-        "plan"
-      ],
-      "difficulty": "mid",
-      "question": "How do you safely handle a Terraform state lock that appears to be stuck in a CI/CD pipeline?",
-      "source": "cards/terraform/lock-stuck-handling.md",
-      "answerMarkdown": "1. **Immediate mitigation:** freeze all pipelines that can touch the same state/environment. Make sure no Terraform job is still running before doing anything destructive.\n2. **Investigate the lock:** inspect the lock metadata to identify the owning job/process, then verify whether it is still alive. Check CI job status, Terraform state operations, and cloud-side evidence such as AWS logs or CloudTrail.\n3. **Read-only assessment:** run non-mutating commands to understand current state drift and partial progress:\n\n```bash\nterraform plan\nterraform plan -refresh-only\nterraform state list\nterraform state show <resource>\n```\n\n4. **Decision criteria:** use `terraform force-unlock` only if you are certain the process that created the lock has died and will not resume. If the apply failed mid-way, confirm which resources changed and whether any import or reconciliation is needed before re-running.\n5. **Prevention:** in GitLab, use `resource_group` per state/environment, separate plan from apply, require manual approval for prod, and avoid multiple pipelines managing overlapping resources. If needed, serialize retries instead of allowing concurrent applies.\n\nExample GitLab protection:\n\n```yaml\napply_prod:\n  stage: apply\n  resource_group: terraform-prod\n  script:\n    - terraform apply tfplan\n```",
-      "answerHtml": "<p>1. <strong>Immediate mitigation:</strong> freeze all pipelines that can touch the same state/environment. Make sure no Terraform job is still running before doing anything destructive. 2. <strong>Investigate the lock:</strong> inspect the lock metadata to identify the owning job/process, then verify whether it is still alive. Check CI job status, Terraform state operations, and cloud-side evidence such as AWS logs or CloudTrail. 3. <strong>Read-only assessment:</strong> run non-mutating commands to understand current state drift and partial progress:</p>\n<pre><code>terraform plan\nterraform plan -refresh-only\nterraform state list\nterraform state show &lt;resource&gt;</code></pre>\n<p>4. <strong>Decision criteria:</strong> use <code>terraform force-unlock</code> only if you are certain the process that created the lock has died and will not resume. If the apply failed mid-way, confirm which resources changed and whether any import or reconciliation is needed before re-running. 5. <strong>Prevention:</strong> in GitLab, use <code>resource_group</code> per state/environment, separate plan from apply, require manual approval for prod, and avoid multiple pipelines managing overlapping resources. If needed, serialize retries instead of allowing concurrent applies.</p>\n<p>Example GitLab protection:</p>\n<pre><code>apply_prod:\n  stage: apply\n  resource_group: terraform-prod\n  script:\n    - terraform apply tfplan</code></pre>"
     },
     {
       "id": "terraform.module-depends-on",
@@ -1608,33 +1230,6 @@
       "source": "cards/terraform/prevent-destroy.md",
       "answerMarkdown": "`prevent_destroy = true` makes Terraform fail if a plan would destroy or replace the resource.\n\n```hcl\nresource \"aws_db_instance\" \"prod\" {\n  lifecycle {\n    prevent_destroy = true\n  }\n}\n```\n\nIt helps with accidental `terraform destroy` and replacement caused by force-new attributes.\n\nIt does not protect against:\n\n- Removing the resource block from HCL, because the lifecycle rule disappears too.\n- `terraform state rm`, which removes the state entry.\n- Manual deletion outside Terraform.\n- Cloud-side operations by another system.\n\nFor critical resources, combine Terraform lifecycle rules with policy checks and provider-native protections such as RDS deletion protection or S3 bucket policies.",
       "answerHtml": "<p><code>prevent_destroy = true</code> makes Terraform fail if a plan would destroy or replace the resource.</p>\n<pre><code>resource &quot;aws_db_instance&quot; &quot;prod&quot; {\n  lifecycle {\n    prevent_destroy = true\n  }\n}</code></pre>\n<p>It helps with accidental <code>terraform destroy</code> and replacement caused by force-new attributes.</p>\n<p>It does not protect against:</p>\n<ul><li>Removing the resource block from HCL, because the lifecycle rule disappears too.</li><li><code>terraform state rm</code>, which removes the state entry.</li><li>Manual deletion outside Terraform.</li><li>Cloud-side operations by another system.</li></ul>\n<p>For critical resources, combine Terraform lifecycle rules with policy checks and provider-native protections such as RDS deletion protection or S3 bucket policies.</p>"
-    },
-    {
-      "id": "terraform.production-recreate-plan",
-      "title": "Production Recreate Plan",
-      "technologies": [
-        "terraform",
-        "aws"
-      ],
-      "areas": [
-        "plan",
-        "state",
-        "drift",
-        "providers",
-        "modules"
-      ],
-      "tags": [
-        "replace",
-        "drift",
-        "state",
-        "rds",
-        "ci"
-      ],
-      "difficulty": "mid",
-      "question": "How do you investigate and safely handle a Terraform plan that wants to replace production resources after a seemingly tag-only change?",
-      "source": "cards/terraform/production-recreate-plan.md",
-      "answerMarkdown": "First, stop the merge request and treat the plan as suspicious: tag updates should usually be in-place, so a `-/+` on production resources means Terraform sees a force-replace change or state mismatch.\n\n### 1) Investigate why replacement is happening\n- Compare the Git diff with what is in the plan.\n- Render and inspect the plan to see the exact attributes causing replacement.\n- Check current live state and addresses.\n- Look for changes in module/provider versions, drift, bad import, or moved resource addresses.\n\n### 2) Commands to run\n```sh\nterraform plan\nterraform plan -out=tfplan\nterraform show tfplan\ngit diff\nterraform state list | grep prod\nterraform state show aws_db_instance.prod\nterraform state show aws_lb_target_group.api_tg\n```\n\n### 3) How to decide the root cause\n- **Code change:** an immutable argument changed, e.g. `name`, `identifier`, `vpc_id`, `subnet_group`, `target_type`, `protocol`, `port`.\n- **Provider/module change:** version bump changed diff behavior or defaults.\n- **Drift:** AWS config no longer matches state.\n- **Import/state issue:** resource exists but was imported incorrectly or not at the right address.\n- **Refactor/state move:** resource moved in code but state was not moved with `terraform state mv`.\n\n### 4) When to use key commands\n- `terraform plan`: validate the intended change and see if it forces replacement.\n- `terraform state show`: inspect the exact tracked attributes of a resource.\n- `terraform state list`: find resource addresses currently in state.\n- `terraform providers lock`: pin provider versions/checksums to avoid surprise behavior.\n- `terraform import`: bring an existing real resource under Terraform control.\n- `terraform state mv`: move state to a new resource address during refactors.\n\n### 5) Prevent accidental destruction of prod DB\n- Add `lifecycle { prevent_destroy = true }` on the DB.\n- Enable RDS `deletion_protection = true`.\n- Require a manual approval step for production applies.\n- Block destroy/replace of RDS with CI policy checks.\n- Require backup/snapshot and explicit approval before any replacement.\n\n### 6) Harden repo and pipeline\n- Pin provider and module versions.\n- Require review of the saved plan artifact (`terraform plan -out=tfplan` + `terraform show tfplan`).\n- Fail CI on any unexpected destroy/replace in production.\n- Review moved/imported resources during refactors.\n- Keep state and code aligned after renames or module restructuring.",
-      "answerHtml": "<p>First, stop the merge request and treat the plan as suspicious: tag updates should usually be in-place, so a <code>-/+</code> on production resources means Terraform sees a force-replace change or state mismatch.</p>\n<h3>1) Investigate why replacement is happening</h3>\n<ul><li>Compare the Git diff with what is in the plan.</li><li>Render and inspect the plan to see the exact attributes causing replacement.</li><li>Check current live state and addresses.</li><li>Look for changes in module/provider versions, drift, bad import, or moved resource addresses.</li></ul>\n<h3>2) Commands to run</h3>\n<pre><code>terraform plan\nterraform plan -out=tfplan\nterraform show tfplan\ngit diff\nterraform state list | grep prod\nterraform state show aws_db_instance.prod\nterraform state show aws_lb_target_group.api_tg</code></pre>\n<h3>3) How to decide the root cause</h3>\n<ul><li><strong>Code change:</strong> an immutable argument changed, e.g. <code>name</code>, <code>identifier</code>, <code>vpc_id</code>, <code>subnet_group</code>, <code>target_type</code>, <code>protocol</code>, <code>port</code>.</li><li><strong>Provider/module change:</strong> version bump changed diff behavior or defaults.</li><li><strong>Drift:</strong> AWS config no longer matches state.</li><li><strong>Import/state issue:</strong> resource exists but was imported incorrectly or not at the right address.</li><li><strong>Refactor/state move:</strong> resource moved in code but state was not moved with <code>terraform state mv</code>.</li></ul>\n<h3>4) When to use key commands</h3>\n<ul><li><code>terraform plan</code>: validate the intended change and see if it forces replacement.</li><li><code>terraform state show</code>: inspect the exact tracked attributes of a resource.</li><li><code>terraform state list</code>: find resource addresses currently in state.</li><li><code>terraform providers lock</code>: pin provider versions/checksums to avoid surprise behavior.</li><li><code>terraform import</code>: bring an existing real resource under Terraform control.</li><li><code>terraform state mv</code>: move state to a new resource address during refactors.</li></ul>\n<h3>5) Prevent accidental destruction of prod DB</h3>\n<ul><li>Add <code>lifecycle { prevent_destroy = true }</code> on the DB.</li><li>Enable RDS <code>deletion_protection = true</code>.</li><li>Require a manual approval step for production applies.</li><li>Block destroy/replace of RDS with CI policy checks.</li><li>Require backup/snapshot and explicit approval before any replacement.</li></ul>\n<h3>6) Harden repo and pipeline</h3>\n<ul><li>Pin provider and module versions.</li><li>Require review of the saved plan artifact (<code>terraform plan -out=tfplan</code> + <code>terraform show tfplan</code>).</li><li>Fail CI on any unexpected destroy/replace in production.</li><li>Review moved/imported resources during refactors.</li><li>Keep state and code aligned after renames or module restructuring.</li></ul>"
     },
     {
       "id": "terraform.provider-config-submodules",

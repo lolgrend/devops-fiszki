@@ -17,6 +17,8 @@ Long-lived `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` values in CI secrets 
 
 Prefer OIDC. The CI system issues a short-lived identity token, and AWS validates it with `sts:AssumeRoleWithWebIdentity`.
 
+In GitHub Actions, the workflow or job that requests an OIDC token also needs explicit `id-token: write` permission.
+
 Benefits:
 
 - No static cloud secret in CI.
