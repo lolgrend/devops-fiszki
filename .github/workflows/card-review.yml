@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write
 
 jobs:
   review:
@@ -32,11 +33,47 @@ jobs:
         run: git fetch origin main:refs/remotes/origin/main
 
       - name: Deterministic card review
-        run: python3 tools/review_new_cards.py --base origin/main
+        id: deterministic_review
+        continue-on-error: true
+        run: python3 tools/review_new_cards.py --base origin/main 2>&1 | tee deterministic-review.md
 
       - name: Optional LLM card review
+        id: llm_review
+        continue-on-error: true
         env:
           LITE_LLM_BASE_URL: ${{ vars.LITE_LLM_BASE_URL }}
           LITE_LLM_MODEL: ${{ vars.LITE_LLM_MODEL }}
           LITE_LLM_KEY: ${{ secrets.LITE_LLM_KEY }}
-        run: python3 tools/review_new_cards_llm.py --base origin/main --optional
+        run: python3 tools/review_new_cards_llm.py --base origin/main --optional 2>&1 | tee llm-review.md
+
+      - name: Build PR review comment
+        if: always()
+        run: |
+          {
+            echo "## Card review"
+            echo
+            echo "### Deterministic review"
+            echo
+            echo '```text'
+            cat deterministic-review.md 2>/dev/null || echo "Deterministic review did not produce output."
+            echo '```'
+            echo
+            echo "### Optional LLM review"
+            echo
+            echo '```text'
+            cat llm-review.md 2>/dev/null || echo "LLM review did not produce output."
+            echo '```'
+          } > card-review-comment.md
+
+      - name: Comment review on PR
+        if: always() && github.event_name == 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_API_URL: ${{ github.api_url }}
+        run: python3 tools/post_pr_comment.py --body-file card-review-comment.md --marker '<!-- card-review -->'
+
+      - name: Fail on review errors
+        if: steps.deterministic_review.outcome == 'failure' || steps.llm_review.outcome == 'failure'
+        run: exit 1

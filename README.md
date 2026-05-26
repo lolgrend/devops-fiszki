@@ -90,7 +90,8 @@ GitHub Actions runs on GitHub-hosted runners and checks that the public showcase
 
 - validate card metadata and regenerate `data/flashcards.json`,
 - build the static app into `dist/`,
-- optionally run deterministic and LLM-assisted card review workflows when configured.
+- optionally run deterministic and LLM-assisted card review workflows when configured,
+- deploy the static app to GitHub Pages after changes are merged to `main`.
 
 The LLM review script uses OpenAI-compatible environment variables when available:
 
