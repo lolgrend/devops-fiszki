@@ -97,6 +97,9 @@ The LLM review script can use the OpenAI API directly:
 
 - `OPENAI_API_KEY`
 - `OPENAI_MODEL`, optional; defaults to `gpt-5.4-mini`
+- `MAX_LLM_REVIEW_CARDS`, optional; defaults to `5`
+- `MAX_LLM_CARD_CHARS`, optional; defaults to `4500`
+- `MAX_LLM_COMPLETION_TOKENS`, optional; defaults to `900`
 
 It also supports an OpenAI-compatible gateway such as LiteLLM:
 
