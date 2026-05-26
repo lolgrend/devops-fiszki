@@ -18,6 +18,8 @@ The IAM role trust policy should restrict:
 
 The job receives temporary AWS credentials instead of long-lived access keys.
 
+In GitHub Actions this also requires explicit `id-token: write` permission for the job or workflow that needs to request an OIDC token.
+
 Benefits:
 
 - No static cloud secret stored in CI.
